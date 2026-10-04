@@ -1,39 +1,39 @@
+// User-requested simulated copy. Always display the demo notice beside quotes.
+// Never use these in review/rating structured data.
 export const testimonials = [
   {
+    author: "Bexoni Labs",
     quote:
-      "From across the globe in Amsterdam, I discovered their incredible work online. Despite the distance, Serena made me feel like we were right next door — always responsive and attentive to my vision.",
-    author: "Mieke",
-    business: "Maison Adeola",
+      "SBC brought clarity to our ideas and gave us a visual direction we could build on. The process felt thoughtful from the first conversation.",
   },
   {
+    author: "Ndienuguscotland",
     quote:
-      "Serena's work has elevated the visual identity of my clinic, giving it a distinct and memorable brand that truly reflects who we are. The website redesign is already generating positive feedback and helping us stand out in a crowded market.",
-    author: "Brittany",
-    business: "Moncton Counselling & Wellness",
+      "We wanted our identity to feel connected to our community. The creative direction gave our story a clear, consistent way to show up.",
   },
   {
+    author: "Booreceipt",
     quote:
-      "Serena's whole design process created the structure and support I needed to visualize my start-up's values and purpose. I consider this investment worthy — a renewed brand identity that genuinely benefits our core values and long-term goals.",
-    author: "Dana",
-    business: "Bee Unique Yoga",
+      "What stood out was the attention to the bigger picture. Every design choice felt connected to what we wanted people to understand about our brand.",
   },
   {
+    author: "Bexhearts",
     quote:
-      "Even after she designed our beautiful website she continued to check in. As a founder there's a lot to manage and the website was one less thing I had to worry about. Complete ease!",
-    author: "Bianka",
-    business: "Tea Party 4 Black Girls",
+      "Our ideas finally felt like one brand. The colours, voice, and content direction came together in a way that felt true to us.",
   },
   {
+    author: "Deluccis",
     quote:
-      "From the very beginning she put me at ease to help transfer the image I had in my head into digital form and website. We nailed everything so quickly too. Very grateful for Serena and all the work she did!",
-    author: "Leisha",
-    business: "The Traveling Hairstylists",
+      "The team brought intention to the details and energy to the creative process. We loved seeing our vision take shape across the brand.",
   },
-] as const;
-
-export const stats = [
-  { value: "6+", label: "Years of experience" },
-  { value: "100+", label: "Clients impacted" },
-  { value: "50+", label: "Women-led businesses supported" },
-  { value: "100%", label: "Happy clients" },
+  {
+    author: "Onyechachi",
+    quote:
+      "I am so glad I decided to work with SBC on this brand. Having a creative partner helped me feel much more confident about the direction.",
+  },
+  {
+    author: "Chii",
+    quote:
+      "SBC helped turn the ideas in my head into a brand I felt excited to share. The experience was collaborative, clear, and full of care.",
+  },
 ] as const;

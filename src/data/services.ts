@@ -1,109 +1,104 @@
 export type Service = {
   slug: string;
-  index: string;
   name: string;
   short: string;
   category: string;
-  price: string;
-  timeline: string;
   description: string;
-  forWho: string[];
+  details: string;
   includes: string[];
-  notFor?: string[];
 };
-
 export const services: Service[] = [
   {
-    slug: "deep-roots",
-    index: "01",
-    name: "Deep Roots",
-    short: "Brand identity design",
-    category: "Brand identity design",
-    price: "From $2,900 USD",
-    timeline: "Typical timeline: 3 weeks",
+    slug: "branding",
+    name: "Full branding & brand building",
+    short: "A brand they remember.",
+    category: "Branding",
     description:
-      "A brand identity that feels like the authentic, confident version of you. We craft a foundation that tells your story, attracts your ideal clients, and positions your business for lasting growth. This is the brand that finally feels aligned with your vision.",
-    forWho: [
-      "You built your brand quickly just to launch — and now you've outgrown it.",
-      "You hesitate before sharing your visuals because they undersell your work.",
-      "You have a Notes app of half-formed ideas and a Pinterest board of dream visuals.",
-      "You're starting fresh and want to plant the right foundation first.",
-    ],
+      "Build a distinctive visual identity that positions your business as a premium brand, builds trust, and gives you the confidence to charge what your work is worth.",
+    details:
+      "Your identity is more than a logo. We bring your positioning to life through a considered visual system that feels like your business and works across its touchpoints.",
     includes: [
-      "Brand strategy & creative direction (guided discovery)",
-      "Primary logo, secondary marks & submarks",
-      "Curated colour palette & typography system",
-      "Brand pattern / texture & supporting graphics",
-      "Mini brand guidelines document",
-      "Launch-ready file kit (print + digital)",
+      "Logo and visual identity",
+      "Colour and typography direction",
+      "Brand guidelines",
+      "Packaging and supporting brand assets, shaped to your brief",
     ],
   },
   {
-    slug: "the-canopy",
-    index: "02",
-    name: "The Canopy",
-    short: "Website design & development",
-    category: "Website design and development",
-    price: "From $4,900 USD",
-    timeline: "Typical timeline: 4 weeks",
+    slug: "brand-strategy",
+    name: "Brand strategy",
+    short: "Clarity before creativity.",
+    category: "Strategy",
     description:
-      "Custom web design and development that doesn't just look good — it works. Every page, interaction, and visual element is crafted to reflect your brand, build trust, and guide your audience toward action.",
-    forWho: [
-      "Your work and client experience are better than your website suggests.",
-      "You rely on over-explaining instead of letting your site do the work.",
-      "You need a site that connects, converts, and shows the depth of your work.",
-      "You want every page to have a purpose and every element to support your story.",
-    ],
+      "Stop guessing and start growing with intention. We help you define your positioning, messaging, and direction so every decision moves your business closer to its goals.",
+    details:
+      "We start with your audience, your vision, and your market. Together, we find what makes your business different and create a direction that guides your identity, content, and launch.",
     includes: [
-      "Website strategy & sitemap (conversion-focused structure)",
-      "Custom homepage + key inner pages",
-      "Copy polish & section hierarchy guidance",
-      "Responsive build (mobile-first QA)",
-      "Accessibility-friendly decisions (contrast, hierarchy, labels)",
-      "Launch checklist & handover walkthrough",
+      "Audience profiling and competitor research",
+      "Brand positioning and messaging",
+      "Content pillars and brand direction",
+      "Launch and personal brand strategy where relevant",
     ],
   },
   {
-    slug: "full-ecosystem",
-    index: "03",
-    name: "The Full Ecosystem",
-    short: "Branding + web design",
-    category: "Branding + web design",
-    price: "From $6,500 USD",
-    timeline: "Typical timeline: 6 weeks",
+    slug: "campaign-development",
+    name: "Campaign development",
+    short: "Ideas made impossible to ignore.",
+    category: "Campaigns",
     description:
-      "A comprehensive transformation of your brand and online presence. Ideal for businesses ready for a significant overhaul — every element designed to amplify your message and make your business feel fully aligned.",
-    forWho: [
-      "Your branding and website both feel stuck in an older version of you.",
-      "You want one cohesive overhaul instead of piecemeal fixes.",
-      "You're stepping into your next level and need everything to match.",
-      "You want marketing to feel easy because the assets finally work together.",
-    ],
+      "Create scroll-stopping visuals that tell your story, elevate your products, and make your brand impossible to ignore.",
+    details:
+      "From the first idea to the final shot, we build a campaign around what your brand needs to say. Creative direction, campaign planning, and content work together to bring that story to life.",
     includes: [
-      "Everything in Deep Roots (full identity system)",
-      "Everything in The Canopy (custom website)",
-      "Unified creative direction across brand + web",
-      "Social starter templates matched to the new identity",
-      "Launch asset pack & rollout guidance",
-      "Priority support through the full 6-week arc",
+      "Creative direction and campaign concepts",
+      "Campaign planning and content ideation",
+      "Product and lifestyle shoots",
+      "Supporting imagery and video content",
+    ],
+  },
+  {
+    slug: "website-design",
+    name: "Website design & development",
+    short: "A digital home with a purpose.",
+    category: "Websites",
+    description:
+      "Your website should do more than look good. We design strategic websites that build trust, showcase your value, and turn visitors into paying clients.",
+    details:
+      "A clear story, an intentional structure, and a visual experience that feels like your brand. We shape the site around your business goals and the people you want to reach.",
+    includes: [
+      "Website structure and content direction",
+      "Website design",
+      "Website development",
+    ],
+  },
+  {
+    slug: "social-media-management",
+    name: "Social media management",
+    short: "Consistency that builds connection.",
+    category: "Social",
+    description:
+      "Turn your social media into a business asset with consistent content that builds credibility, nurtures your audience, and attracts the right customers.",
+    details:
+      "We connect strategy with everyday execution, bringing structure to your content and maintaining a clear, recognisable brand presence across your social platforms.",
+    includes: [
+      "Social media audit and strategy",
+      "Content calendars and caption writing",
+      "Content planning and posting",
+      "Audience engagement and event storytelling",
     ],
   },
 ];
-
 export const pillars = [
   {
-    index: "Pillar (01)",
-    name: "Plant Your Seed",
-    text: "Before anything is designed, we dig into the heart of your business. Through guided conversation and strategic discovery, we uncover what's misaligned, what your business needs, and what it's growing toward.",
+    name: "Understand",
+    text: "Every engagement starts with understanding your audience, your vision, and your market. Strategy comes before design.",
   },
   {
-    index: "Pillar (02)",
-    name: "Grow Your Roots",
-    text: "This is where your brand begins to take shape. You'll have your own client portal, clear communication, and updates every step of the way — so you feel supported, involved, and confident throughout.",
+    name: "Create",
+    text: "We translate that direction into an intentional brand experience, from identity and websites to campaigns and content.",
   },
   {
-    index: "Pillar (03)",
-    name: "Bloom",
-    text: "Once everything is refined and finalized, you receive your complete brand and website assets — ready to use, share, and grow with. This isn't just a launch; it's the beginning of a brand built to flourish.",
+    name: "Build",
+    text: "Consistent execution brings it all together. Your brand shows up clearly across the touchpoints that matter to your business.",
   },
-] as const;
+];

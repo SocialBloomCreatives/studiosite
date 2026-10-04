@@ -1,95 +1,175 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeading } from "@/components/SectionHeading";
-import { Reveal } from "@/components/Reveal";
-import { testimonials } from "@/data/testimonials";
-
+import { pillars } from "@/data/services";
 export const metadata: Metadata = {
-  title: "About — Serena & Kohi",
-  description: "Kohi Design Studio, founded September 2021 by Serena Tyrrell in Montréal. Intentional brands and websites for driven women ready for more.",
+  title: "About SBC",
+  description:
+    "Meet Social Bloom Creatives, a Lagos-based creative agency led by Midey. Strategy, creativity, and AI for ambitious brands.",
 };
-
-export default function AboutPage() {
+export default function About() {
   return (
     <>
       <PageHero
-        index="04"
-        eyebrow="Our studio"
-        title={<>Crafting standout brands & websites since 2022.</>}
-        lede="A creative studio in Montréal combining creativity with strategy to bring your business story to life online. Every colour, typeface, and layout reflects your voice, values, and mission."
-        meta={["Founded::Sept 2021", "Founder::Serena Tyrrell", "Base::Montréal, CA", "Reach::Worldwide"]}
+        eyebrow="The people behind the possibilities"
+        title={
+          <>
+            More than a<br />
+            <span className="serif">creative agency.</span>
+          </>
+        }
+        lede="Social Bloom Creatives was built for founders with big ideas but limited time. We know what it’s like to wear every hat in your business."
       />
-
-      <section className="border-b rule bg-paper" aria-label="Mission">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1fr_1.4fr] md:py-20">
-          <Reveal><p className="eyebrow text-fern">What we believe</p></Reveal>
-          <Reveal delay={80}>
-            <p className="font-display text-3xl leading-[1.05] tracking-tight md:text-4xl">
-              Every business deserves a brand that feels intentional, a website that supports growth,
-              and a digital presence that <em className="text-clay">makes an impact.</em>
-            </p>
-            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
-              Our mission is to help your business look and feel ready to grow — no matter the stage
-              you&apos;re at. (Migrated from the source About page; lightly restructured for hierarchy.)
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="border-b rule" aria-label="Founder story">
-        <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.4fr_1fr] md:py-20">
-          <div>
-            <SectionHeading index="01" eyebrow="The founder & designer" title={<>Hi there, I&apos;m Serena!</>} />
-            <div className="max-w-xl space-y-4 text-[15px] leading-relaxed text-ink-soft md:text-base">
-              <Reveal><p>Kohi Design Studio came to life in <strong className="text-ink">September 2021</strong>, while I was still a student in my final year of graphic design studies.</p></Reveal>
-              <Reveal><p>It started as a small Instagram account where I shared college work and passion projects. Through consistency, dedication, and a lot of passion, that account evolved into something I never imagined — and let me freelance full-time.</p></Reveal>
-              <Reveal><p>Today, Kohi is my creative home: a place to collaborate, conceptualize, and inspire others through design.</p></Reveal>
-              <Reveal>
-                <div className="border rule bg-paper p-6">
-                  <p className="font-display text-2xl text-ink">Where your vision <em className="text-clay">finally</em> comes to life.</p>
-                  <p className="mt-3">I work with driven women ready for more — <strong className="text-ink">more clarity, more confidence, and a brand that finally feels like home.</strong> You&apos;re not just building a business; you&apos;re building something meaningful. My mission is to hand you a digital presence that feels magnetic, unmistakably yours, and <em>impossible not to show off</em>.</p>
-                </div>
-              </Reveal>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-ink px-6 py-3.5 font-mono text-xs tracking-[0.18em] uppercase text-cream hover:bg-clay">
-                Let&apos;s create something intentional <ArrowRight size={14} aria-hidden />
-              </Link>
-            </div>
+      <section className="section">
+        <div className="wrap split">
+          <div className="portrait">
+            <Image
+              src="/brand/studio.webp"
+              alt="SBC creative director Midey with the agency's visual identity"
+              fill
+              sizes="(max-width: 900px) 100vw, 45vw"
+            />
           </div>
-          <Reveal delay={120}>
-            <aside className="space-y-5">
-              <div className="border rule bg-moss p-6 text-cream">
-                <p className="eyebrow text-sage">Currently</p>
-                <ul className="mt-3 space-y-2 font-mono text-[11.5px] tracking-[0.14em] uppercase">
-                  <li>🍵 enjoying tea</li>
-                  <li>🛫 traveling</li>
-                  <li>💃🏽 dancing · 🤸🏽‍♀️ being quirky</li>
-                  <li>🎶 concerts · 📚 reading · 🌱 holistic living</li>
-                  <li>🥘 new foods · 👟 movement · 🧠 learning</li>
-                </ul>
-              </div>
-              <div className="border rule bg-blush/50 p-6">
-                <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-clay-deep">Studio note (new)</p>
-                <p className="font-display mt-2 text-2xl leading-tight">Fellow founder energy: I&apos;ve been in your exact shoes — lost in Canva, rebranding weekly.</p>
-                <p className="mt-2 text-sm leading-relaxed text-ink-soft">That&apos;s why the Rooted Brand Ecosystem exists: to plant the seeds I wish someone had planted for me.</p>
-              </div>
-            </aside>
-          </Reveal>
+          <div>
+            <p className="eyebrow">This is SBC Agency</p>
+            <h2 className="section-title">
+              A creative partner
+              <br />
+              for your <span className="serif">next chapter.</span>
+            </h2>
+            <div className="copy mt-7">
+              <p>
+                You’re building your product, serving customers, creating
+                content, and trying to make your brand stand out at the same
+                time. That’s where we come in.
+              </p>
+              <p>
+                We help businesses build brands that don’t just look beautiful
+                but are backed by strategy. From brand identity and positioning
+                to websites, content systems, and AI-powered workflows, we
+                create foundations for growth.
+              </p>
+              <p>
+                Led by brand strategist and creative director{" "}
+                <strong>Midey</strong>, SBC brings storytelling, identity, and
+                culture together with insight and intention. Our work spans
+                brands in Lagos, the UK, and Canada.
+              </p>
+            </div>
+            <Link className="text-link mt-8" href="/portfolio">
+              See what we’ve been creating{" "}
+              <ArrowUpRight size={16} aria-hidden />
+            </Link>
+          </div>
         </div>
       </section>
-
-      <section className="mx-auto max-w-6xl px-5 py-14 md:py-20" aria-label="Love notes">
-        <SectionHeading index="02" eyebrow="Love notes" title={<>Kind words, kept verbatim.</>} lede="All testimonials below are migrated word-for-word (lightly trimmed for length) from the source site. No quotes invented." />
-        <div className="grid gap-5 md:grid-cols-2">
-          {testimonials.map((t, i) => (
-            <Reveal key={t.business} delay={(i % 2) * 80}>
-              <figure className="h-full border rule bg-paper p-6">
-                <blockquote className="text-[15px] leading-relaxed">&ldquo;{t.quote}&rdquo;</blockquote>
-                <figcaption className="mt-4 font-mono text-[11px] tracking-[0.2em] uppercase text-muted">{t.author} — {t.business}</figcaption>
-              </figure>
-            </Reveal>
-          ))}
+      <section className="section dark">
+        <div className="wrap split">
+          <div>
+            <p className="eyebrow">Why we exist</p>
+            <h2 className="section-title">
+              Beautiful is
+              <br />
+              just the <span className="serif">beginning.</span>
+            </h2>
+          </div>
+          <div className="copy">
+            <p>
+              Too many businesses invest in logos before strategy, websites
+              before positioning, and content before understanding their
+              audience. The result? Brands that look good but struggle to
+              connect, convert, and grow.
+            </p>
+            <p>
+              We created Social Bloom Creatives to change that. Every project
+              begins with strategy because great design is powerful when it
+              solves the right problem.
+            </p>
+            <p>
+              Every business has different goals, audiences, and opportunities.
+              We take time to understand your vision before creating a brand
+              experience that’s intentional, memorable, and built for long-term
+              growth.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="approach" className="section">
+        <div className="wrap">
+          <SectionHeading
+            eyebrow="Our approach"
+            title={
+              <>
+                Built around your business.
+                <br />
+                <span className="serif">Always.</span>
+              </>
+            }
+          />
+          <p className="copy">
+            Whether we’re developing your identity, designing your website,
+            planning your content, or helping you integrate AI into your
+            workflow, every recommendation starts with your business goals.
+          </p>
+          <div className="process-grid">
+            {pillars.map((p, i) => (
+              <div className="belief" key={p.name}>
+                <p className="eyebrow">0{i + 1}</p>
+                <h3>{p.name}</h3>
+                <p className="copy">{p.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section divider">
+        <div className="wrap">
+          <SectionHeading
+            eyebrow="What we believe"
+            title={
+              <>
+                The things we
+                <br />
+                <span className="serif">stand behind.</span>
+              </>
+            }
+          />
+          <div className="beliefs">
+            {[
+              [
+                "Strategy before design.",
+                "The clearest direction creates the most intentional work.",
+              ],
+              [
+                "Creative, still human.",
+                "AI should make businesses more creative, without losing the people or personality behind them.",
+              ],
+              [
+                "Consistency over trends.",
+                "Great brands are built through a recognisable presence that carries across every touchpoint.",
+              ],
+              [
+                "Knowledge worth sharing.",
+                "Every founder deserves access to the tools and knowledge needed to grow with confidence.",
+              ],
+            ].map(([t, d]) => (
+              <div key={t} className="belief">
+                <h3>{t}</h3>
+                <p className="copy">{d}</p>
+              </div>
+            ))}
+          </div>
+          <div className="actions mt-12">
+            <Link className="button" href="/contact">
+              Let’s build something great <ArrowUpRight size={16} aria-hidden />
+            </Link>
+            <Link className="text-link" href="/college">
+              Discover SBC College <ArrowUpRight size={16} aria-hidden />
+            </Link>
+          </div>
         </div>
       </section>
     </>

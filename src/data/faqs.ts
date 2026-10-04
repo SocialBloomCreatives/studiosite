@@ -1,26 +1,26 @@
 export const faqs = [
   {
-    q: "Do you offer payment plans?",
-    a: "Yes — flexible payment plans are available on all Rooted Brand Ecosystem offerings. The exact structure is confirmed during inquiry so it fits your cash flow. (Source-site FAQ; confirm final terms on your inquiry call.)",
+    q: "How can I work with SBC?",
+    a: "Start with the project inquiry form. Tell us your name, contact details, and the services you are interested in, then send your inquiry to SBC by email or WhatsApp.",
   },
   {
-    q: "What website platforms do you use?",
-    a: "Recent Kohi builds span Shopify, Wix Studio, Squarespace, and Framer — chosen per project. Platform is recommended based on your needs (shop vs. service site, editing comfort, budget) during discovery.",
+    q: "What services do you offer?",
+    a: "Full branding and brand building, brand strategy, campaign development, website design and development, and social media management. Your project's scope is agreed directly with SBC.",
   },
   {
-    q: "What is not included in your pricing?",
-    a: "Starting investments are listed per service (Deep Roots from $2,900; The Canopy from $4,900; Full Ecosystem from $6,500 USD). Domain, platform subscriptions, stock licensing beyond the included kit, and ongoing tweaks after handover are typically separate — confirmed in your proposal.",
+    q: "What is SBC College?",
+    a: "Our learning space for founders building their brands themselves. Explore practical toolkits, courses, AI resources, and the upcoming Campus community.",
   },
   {
-    q: "Do you offer revisions?",
-    a: "Yes — structured feedback rounds are built into every project with a client portal, clear communication, and updates at each step so you feel supported and confident throughout.",
+    q: "Is Campus open yet?",
+    a: "Campus is coming soon. You can send SBC a waitlist request to express your interest and ask about the launch.",
   },
   {
-    q: "When can we start?",
-    a: "Kohi is fully booked for 2026. Bookings are estimated to reopen in December 2026 for work beginning in early 2027 — join the 2027 waitlist to be first in line.",
+    q: "How do I purchase a resource?",
+    a: "Add resources to your cart and send the order request on WhatsApp. SBC will confirm availability, payment, and delivery directly. This website does not collect payment.",
   },
   {
-    q: "Who is Kohi best for?",
-    a: "Female founders and women-led service businesses who've outgrown DIY and want a clarity-first brand and website. Not the right fit if you only want a quick logo, patch-up tweaks, or an immediate start on a tight timeline.",
+    q: "Where can I see your complete portfolio?",
+    a: "Each project page links to the same full SBC Agency Portfolio on Google Drive, with the original project details and artwork.",
   },
 ] as const;

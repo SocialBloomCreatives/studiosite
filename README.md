@@ -1,39 +1,47 @@
-# Kohi Design Studio — Redesign Scaffold
+# Social Bloom Creatives
 
-Editorial redesign of kohidesignstudio.com. Next.js 16 · App Router · TypeScript · Tailwind v4 · Radix Accordion · lucide-react.
+SBC agency website built with Next.js 16, React 19, and Tailwind CSS. The design uses SBC's blush pink, chocolate, and cream palette with spacious typography and real project artwork.
 
-## Run it
+## Run locally
 
-```bash
-npm install
-npm run dev      # http://localhost:3000
+```sh
+npm run dev
 npm run build
+npm run start
 npm run lint
 npx tsc --noEmit
 ```
 
-## Routes
+If the environment restricts Turbopack's subprocess networking, use `npm run dev -- --webpack` and `npm run build -- --webpack`. The production build was verified with Webpack.
 
-`/`, `/services`, `/services/[deep-roots|the-canopy|full-ecosystem]`, `/method`, `/portfolio`, `/portfolio/[12 slugs]`, `/about`, `/blog`, `/blog/[9 slugs]`, `/faq`, `/contact`, `/waitlist`, `/love`
+## Pages
 
-## Key files
+- `/` — agency homepage
+- `/about` — agency story, creative director, approach, and beliefs
+- `/services` and five `/services/[slug]` pages
+- `/portfolio` and nine `/portfolio/[slug]` case studies
+- `/college` — toolkits, courses, AI resources, and Campus (coming soon)
+- `/resources` — four resources with a persistent cart
+- `/contact` — project intake and contact details
+- `/faq` — practical agency/College/resource questions
+- `/love` — explicitly labelled simulated testimonials, excluded from indexing
 
-- Theme/tokens: `src/app/globals.css` — exact source palette extracted from the live site's Framer tokens: `#f6f7f1` page bg · `#1a1a1a` text · `#372414` espresso dark sections · `#f9f0ab` pale yellow · `#fe5f00` vivid orange · `#bcdcf4` pale blue · `#5590ba` dusty blue · `#eaeae6` light gray. Only `muted`/`clay-deep` are derived (color-mix) for small-text contrast.
-- Fonts + metadata + org schema: `src/app/layout.tsx`
-- Nav: `src/components/layout/Header.tsx` (utility strip + sticky bar + full-screen Index overlay)
-- Footer + closing CTA: `src/components/layout/Footer.tsx`
-- Data (single source of truth): `src/data/{site,services,projects,testimonials,posts,faqs}.ts`
-- Homepage: `src/app/page.tsx`
-- Shared: `Ticker`, `SectionHeading` (`01 / LABEL`), `Reveal` (scroll-in), `ProjectCard`, `FaqAccordion`, `InquiryForm`, `WaitlistForm`, `PageHero`
+The former Journal and Method routes redirect to Resources and About. The old booking waitlist redirects to Campus.
 
-## Not connected yet
+## Content and artwork
 
-- `InquiryForm` / `WaitlistForm` are validated frontend-only; on success they simulate. Wire `handleSubmit`/`onSubmit` to Formspree, Resend, or a Next route handler + add the API keys.
-- Blog bodies are excerpt-derived scaffolding; slugs match the source site. Connect Sanity/Contentful/MDX for full bodies.
-- 11/12 portfolio pages are template overviews with palette-generated covers (only Traveling Hairstylists has full source copy). Add approved images, challenge→approach→outcomes, and quotes per project.
-- No hotlinked or copied source imagery shipped — covers are CSS-generated placeholders. Drop real files under `public/work/<slug>/` and swap the cover block in `ProjectCard` + `portfolio/[slug]`.
-- No analytics, no CMS, no email delivery.
+The source is the original Social Bloom Creatives Canva website and the June 2026 SBC Agency Portfolio linked from its homepage. See `docs/content-migration.md` for the inventory and PDF project mapping. Artwork in `public/work` is extracted from that PDF, grouped by project, and compressed as WebP. Every case study links to the same original Google Drive portfolio.
 
-## Accessibility & motion
+## Contact and purchasing
 
-Semantic landmarks, skip link, labelled controls, Radix accordion, visible focus rings, `prefers-reduced-motion` disables ticker + reveals.
+No external email or payment credentials were supplied. Inquiry and Campus forms prepare a message with explicit email and WhatsApp links; users complete sending in their own app. They never report a successful submission. The resource cart persists only product quantities in local browser storage. Checkout prepares a WhatsApp order request or email; SBC confirms payment and delivery directly. No payments are collected here.
+
+Seven requested testimonial drafts are visibly marked as simulated. Replace them with verified customer wording before publishing as genuine endorsements. No review/rating schema is generated.
+
+## Domain and launch
+
+Set `NEXT_PUBLIC_SITE_URL` to the final HTTPS domain to enable correct metadata URLs and sitemap entries. Until then, the site does not invent a canonical domain or point search engines at the old Canva site. No deployment, analytics, customer database, or automated mailing list is configured.
+
+## Accessibility
+
+Keyboard navigation, native modal focus containment, labelled form controls, visible focus indicators, real portfolio filters, reduced-motion handling, decorative cursor hidden on touch/reduced motion, and progressively enhanced reveal animations. Project images retain their actual dimensions.

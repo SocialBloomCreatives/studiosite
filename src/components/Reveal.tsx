@@ -1,42 +1,41 @@
 "use client";
-
 import { useEffect, useRef } from "react";
-
 export function Reveal({
   children,
   delay = 0,
   className = "",
-  as: Tag = "div",
 }: {
   children: React.ReactNode;
   delay?: number;
   className?: string;
-  as?: "div" | "section" | "li" | "blockquote" | "figure";
 }) {
-  const ref = useRef<HTMLDivElement | null>(null);
-
+  const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
-    const io = new IntersectionObserver(
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+      return;
+    // Progressive enhancement: content is visible with JavaScript disabled.
+    el.classList.add("is-pending");
+    const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("is-visible");
-            io.unobserve(e.target);
-          }
-        });
+        if (entries.some((e) => e.isIntersecting)) {
+          el.classList.remove("is-pending");
+          el.classList.add("is-visible");
+          observer.disconnect();
+        }
       },
-      { threshold: 0.12 }
+      { threshold: 0.06 },
     );
-    io.observe(el);
-    return () => io.disconnect();
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
-
   return (
-    // @ts-expect-error polymorphic tag
-    <Tag ref={ref} className={`reveal ${className}`} style={{ "--reveal-delay": `${delay}ms` } as React.CSSProperties}>
+    <div
+      ref={ref}
+      className={`reveal ${className}`}
+      style={{ "--reveal-delay": `${delay}ms` } as React.CSSProperties}
+    >
       {children}
-    </Tag>
+    </div>
   );
 }

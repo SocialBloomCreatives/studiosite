@@ -1,52 +1,90 @@
 import type { Metadata } from "next";
-import { Fraunces, Instrument_Sans, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { site } from "@/data/site";
-
-const display = Fraunces({ variable: "--font-display", subsets: ["latin"], weight: ["400", "500", "600", "700"], style: ["normal", "italic"] });
-const sans = Instrument_Sans({ variable: "--font-sans", subsets: ["latin"] });
-const mono = IBM_Plex_Mono({ variable: "--font-mono", subsets: ["latin"], weight: ["400", "500"] });
-
+import { CursorDot } from "@/components/CursorDot";
+import { site, siteUrl } from "@/data/site";
+const display = localFont({
+  variable: "--font-sbc-display",
+  display: "swap",
+  src: [
+    { path: "./fonts/fraunces-regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/fraunces-semibold.ttf", weight: "600", style: "normal" },
+    { path: "./fonts/fraunces-italic.ttf", weight: "400", style: "italic" },
+  ],
+});
+const sans = localFont({
+  variable: "--font-sbc-sans",
+  display: "swap",
+  src: [
+    { path: "./fonts/instrument-regular.ttf", weight: "400" },
+    { path: "./fonts/instrument-medium.ttf", weight: "500" },
+    { path: "./fonts/instrument-semibold.ttf", weight: "600" },
+  ],
+});
+const mono = localFont({
+  variable: "--font-sbc-mono",
+  display: "swap",
+  src: "./fonts/plex-mono.ttf",
+  weight: "400",
+});
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title: {
-    default: "Kohi Design Studio — Rooted Brands & Websites for Female Founders",
-    template: "%s — Kohi Design Studio",
+    default: "Social Bloom Creatives — Building Unforgettable Brands",
+    template: "%s — Social Bloom Creatives",
   },
   description:
-    "Montréal-based branding and web design studio for female entrepreneurs. Strategic brand identities and conversion-focused websites through the Rooted Brand Ecosystem.",
+    "Strategy, creativity, and AI for ambitious businesses. Discover SBC branding, campaigns, websites, social media management, and SBC College.",
   openGraph: {
     type: "website",
-    locale: "en_CA",
     siteName: site.name,
-    title: "Kohi Design Studio — Rooted Brands & Websites for Female Founders",
+    title: "Social Bloom Creatives",
     description:
-      "Clarity-led branding and websites for female founders who have outgrown DIY. Based in Montréal, working worldwide.",
+      "Your favourite brand’s favourite agency. Strategy, creativity, and AI.",
   },
-  twitter: { card: "summary_large_image", title: "Kohi Design Studio", description: "Rooted brands & websites for female founders." },
-  robots: { index: true, follow: true },
+  twitter: {
+    card: "summary_large_image",
+    title: site.name,
+    description: site.tagline,
+  },
 };
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const orgSchema = {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: site.name,
-    founder: { "@type": "Person", name: site.founder },
-    address: { "@type": "PostalAddress", addressLocality: "Montréal", addressCountry: "CA" },
     email: site.email,
-    url: site.url,
-    description: "Branding and website design studio for female entrepreneurs.",
+    telephone: site.phone,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lagos",
+      addressCountry: "NG",
+    },
+    ...(siteUrl ? { url: siteUrl } : {}),
+    sameAs: site.socials.map((s) => s.href),
   };
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
-      <body className="flex min-h-full flex-col">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+    <html
+      lang="en"
+      className={`${display.variable} ${sans.variable} ${mono.variable}`}
+    >
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <Header />
-        <main id="main" className="flex-1">{children}</main>
+        <main id="main" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
+        <CursorDot />
       </body>
     </html>
   );
