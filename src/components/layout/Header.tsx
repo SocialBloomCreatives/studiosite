@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
@@ -34,7 +35,14 @@ export function Header() {
             className="wordmark"
             aria-label="Social Bloom Creatives home"
           >
-            <strong>SBC</strong>
+            <Image
+              src="/brand/sbc-logo-brown.svg"
+              width={783}
+              height={305}
+              alt="SBC"
+              className="agency-logo"
+              priority
+            />
             <span>
               Social Bloom
               <br />

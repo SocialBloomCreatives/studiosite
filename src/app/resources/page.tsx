@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero } from "@/components/PageHero";
 import { ResourceShop } from "@/components/ResourceShop";
 export const metadata: Metadata = {
@@ -10,6 +11,16 @@ export default function Resources() {
   return (
     <>
       <PageHero
+        brand={
+          <Image
+            src="/brand/sbc-college-brown.svg"
+            width={767}
+            height={191}
+            alt="SBC College"
+            className="college-logo"
+            priority
+          />
+        }
         eyebrow="SBC College / Resources"
         title={
           <>

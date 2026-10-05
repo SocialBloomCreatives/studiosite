@@ -1,27 +1,27 @@
 {
   "/work/zione-secrets/03.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 1400,
+    "height": 1575
   },
   "/work/zione-secrets/cover.webp": {
     "width": 1200,
-    "height": 675
+    "height": 1350
   },
   "/work/zione-secrets/02.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 1400,
+    "height": 1750
   },
   "/work/zione-secrets/05.webp": {
-    "width": 1600,
-    "height": 900
+    "width": 1284,
+    "height": 2778
   },
   "/work/zione-secrets/04.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 1400,
+    "height": 1575
   },
   "/work/zione-secrets/01.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 1400,
+    "height": 1750
   },
   "/work/goal-up/03.webp": {
     "width": 386,
@@ -64,28 +64,28 @@
     "height": 1280
   },
   "/work/luma/03.webp": {
-    "width": 576,
-    "height": 324
+    "width": 1080,
+    "height": 1350
   },
   "/work/luma/cover.webp": {
-    "width": 372,
-    "height": 460
+    "width": 928,
+    "height": 1150
   },
   "/work/luma/02.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 928,
+    "height": 1150
   },
   "/work/luma/05.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 1122,
+    "height": 1402
   },
   "/work/luma/04.webp": {
-    "width": 817,
-    "height": 490
+    "width": 1080,
+    "height": 1350
   },
   "/work/luma/01.webp": {
-    "width": 1200,
-    "height": 675
+    "width": 928,
+    "height": 1150
   },
   "/work/synn/03.webp": {
     "width": 1200,
@@ -128,32 +128,32 @@
     "height": 844
   },
   "/work/second-skin/03.webp": {
-    "width": 330,
-    "height": 410
+    "width": 1024,
+    "height": 1024
   },
   "/work/second-skin/cover.webp": {
-    "width": 615,
-    "height": 615
+    "width": 1200,
+    "height": 1200
   },
   "/work/second-skin/02.webp": {
-    "width": 576,
-    "height": 324
+    "width": 1080,
+    "height": 1350
   },
   "/work/second-skin/05.webp": {
-    "width": 615,
-    "height": 615
+    "width": 1400,
+    "height": 1400
   },
   "/work/second-skin/04.webp": {
-    "width": 615,
-    "height": 615
+    "width": 1400,
+    "height": 1400
   },
   "/work/second-skin/06.webp": {
     "width": 615,
     "height": 615
   },
   "/work/second-skin/01.webp": {
-    "width": 576,
-    "height": 324
+    "width": 1400,
+    "height": 1400
   },
   "/work/big-and-tall/03.webp": {
     "width": 884,
@@ -190,5 +190,53 @@
   "/work/kynda/01.webp": {
     "width": 948,
     "height": 1600
+  },
+  "/work/luma/06.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "/work/luma/07.webp": {
+    "width": 864,
+    "height": 1227
+  },
+  "/work/luma/08.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/luma/09.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/eve-effect/cover.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/eve-effect/01.webp": {
+    "width": 1400,
+    "height": 1400
+  },
+  "/work/eve-effect/02.webp": {
+    "width": 1400,
+    "height": 1400
+  },
+  "/work/eve-effect/03.webp": {
+    "width": 736,
+    "height": 921
+  },
+  "/work/eve-effect/04.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/eve-effect/05.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/eve-effect/06.webp": {
+    "width": 1123,
+    "height": 1401
+  },
+  "/work/eve-effect/07.webp": {
+    "width": 1122,
+    "height": 1402
   }
 }

@@ -24,8 +24,8 @@ export function PortfolioGrid() {
         {visible.length} projects
       </p>
       <div className="project-grid">
-        {visible.map((p) => (
-          <ProjectCard key={p.slug} project={p} />
+        {visible.map((p, i) => (
+          <ProjectCard key={p.slug} project={p} priority={i < 2} />
         ))}
       </div>
     </>

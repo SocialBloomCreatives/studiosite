@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { WaitlistForm } from "@/components/WaitlistForm";
@@ -14,6 +15,16 @@ export default function College() {
     <>
       <PageHero
         className="college-hero"
+        brand={
+          <Image
+            src="/brand/sbc-college-brown.svg"
+            width={767}
+            height={191}
+            alt="SBC College"
+            className="college-logo"
+            priority
+          />
+        }
         eyebrow="DIY coded :) / Welcome to SBC College"
         title={
           <>

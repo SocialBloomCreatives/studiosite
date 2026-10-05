@@ -69,7 +69,7 @@ export default async function ProjectPage({
             alt={`${project.name} project artwork from the SBC Agency Portfolio`}
             fill
             sizes="100vw"
-            preload
+            priority
           />
         </div>
       </div>

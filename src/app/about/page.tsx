@@ -42,21 +42,23 @@ export default function About() {
             </h2>
             <div className="copy mt-7">
               <p>
-                You’re building your product, serving customers, creating
-                content, and trying to make your brand stand out at the same
-                time. That’s where we come in.
+                Social Bloom Creatives Agency is a creative agency led by brand
+                strategist and creative director Midey. We design identities
+                that feel current, create content that people actually engage
+                with, and build brands that are clear, cohesive, and instantly
+                recognisable.
               </p>
               <p>
-                We help businesses build brands that don’t just look beautiful
-                but are backed by strategy. From brand identity and positioning
-                to websites, content systems, and AI-powered workflows, we
-                create foundations for growth.
+                From visuals, brand strategy to social media management and full
+                content direction, we deliver work that&apos;s intentional and
+                designed to work using a modern creative system designed for how
+                brands grow today, through storytelling, identity, and culture
+                grounded in insight and built to last.
               </p>
               <p>
-                Led by brand strategist and creative director{" "}
-                <strong>Midey</strong>, SBC brings storytelling, identity, and
-                culture together with insight and intention. Our work spans
-                brands in Lagos, the UK, and Canada.
+                Every engagement starts with understanding — your audience, your
+                vision, your market. We bring the creative architecture to make
+                it real.
               </p>
             </div>
             <Link className="text-link mt-8" href="/portfolio">

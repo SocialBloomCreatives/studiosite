@@ -27,10 +27,10 @@ export const projects: Project[] = [
     location: "Lagos & the diaspora",
     headline: "A beauty brand built to stand apart.",
     summary:
-      "A complete brand world for at-home brow lamination, from a butter-yellow and silver identity to packaging, strategy, and launch content.",
+      "Logo, branding, and product and packaging design for Luma Brow Slick — butter-yellow boxes, bags, and a complete retail-ready system.",
     categories: ["Branding", "Strategy"],
     scope: [
-      "Brand identity",
+      "Logo & brand identity",
       "Product & packaging design",
       "Brand strategy",
       "Personal branding",
@@ -44,8 +44,31 @@ export const projects: Project[] = [
       "We created a butter-yellow and silver visual world, with a complete identity and product packaging system.",
       "The brand strategy covered positioning, audience profiling, content pillars, and competitor analysis. A personal brand strategy for the founder and a 30-day Instagram calendar translated that direction into launch content.",
     ],
-    galleryCount: 5,
+    galleryCount: 9,
     pages: "6–8",
+  },
+  {
+    slug: "eve-effect",
+    name: "Eve Effect",
+    industry: "Haircare",
+    location: "Nigeria",
+    headline: "Hair care that works.",
+    summary:
+      "Logo, branding, and product design for Eve Effect — Moisturising Hair Butter, Hydrating Hair Mist, and Rapunzel Hair Oil.",
+    categories: ["Branding", "Strategy"],
+    scope: ["Logo & brand identity", "Branding", "Product design"],
+    challenge:
+      "Eve Effect needed a cohesive, premium identity to unite its haircare range and communicate efficacy on shelf and on social.",
+    brief:
+      "Design a distinctive logo and carry it across labels, packaging, and product photography for the core trio.",
+    approach: [
+      "We built the Eve Effect wordmark with its looping E monogram and a deep-brown and cream label system.",
+      "The identity was applied to jars, spray bottles, and dropper bottles, with art direction for pack shots and e-commerce imagery.",
+    ],
+    outcome:
+      "A shelf-ready range with consistent branding across butter, mist, and oil.",
+    galleryCount: 7,
+    pages: "New",
   },
   {
     slug: "second-skin",
@@ -54,12 +77,13 @@ export const projects: Project[] = [
     location: "Lagos, Nigeria",
     headline: "A scent. An identity. An impression.",
     summary:
-      "An identity and launch world for After Hours, a fragrance designed to become part of how you are remembered.",
-    categories: ["Branding", "Strategy", "Campaigns"],
+      "Logo, branding, product design, and social media for Second Skin After Hours — identity, packaging, and launch content.",
+    categories: ["Branding", "Strategy", "Campaigns", "Social"],
     scope: [
+      "Logo & visual identity",
       "Brand strategy",
-      "Visual identity",
-      "Packaging",
+      "Product & packaging design",
+      "Social media management",
       "Launch planning",
       "Creative direction",
     ],
@@ -73,7 +97,7 @@ export const projects: Project[] = [
     ],
     outcome:
       "Second Skin entered the market with strategy, identity, content direction, and a physical brand experience working together from day one.",
-    galleryCount: 6,
+    galleryCount: 5,
     pages: "22–23",
   },
   {

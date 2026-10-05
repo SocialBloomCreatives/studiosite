@@ -33,3 +33,7 @@ The project name Synn follows the actual visual identity and case study; the con
 Midey, Lagos, socialbloomcreatives@gmail.com and +971 55 975 8688 are supplied by the PDF and confirmed by the user. The seven demo testimonial names and simulated copy were explicitly requested. The original repeated quote under Onyechachi and chii was not treated as two verified customer endorsements.
 
 All Kohi business content, prices, projects, statistics, founder story, blog articles, and booking restrictions have been removed. Proposed copy edits A–E were approved by the user. Existing source terms and prices were preserved; no new business guarantees, service prices, deadlines, or policy terms were invented.
+
+## Brand assets supplied on 4 October 2026
+
+Exact palette: brown `#3D1A14`, pink `#FFECF2`, off-white `#F4F1EC`. Current Instrument Sans and Fraunces fonts retained per user preference. SVG variation 11 supplies the agency wordmark (brown header, cream footer and brand-pink site icon); variation 16 supplies the horizontal College logo for Home, College, and Resources. Variations 9 and 14 are also preserved as transparent, tightly fitted SVG assets. Source files are unchanged; website copies remove export backgrounds and retain the supplied vector letterforms.

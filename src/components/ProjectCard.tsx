@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/data/projects";
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({
+  project,
+  priority = false,
+}: {
+  project: Project;
+  priority?: boolean;
+}) {
   return (
     <Link href={`/portfolio/${project.slug}`} className="project-card">
       <div className="project-cover">
@@ -11,6 +17,7 @@ export function ProjectCard({ project }: { project: Project }) {
           alt={`${project.name} — ${project.industry} project by SBC`}
           fill
           sizes="(max-width: 600px) 100vw, 50vw"
+          priority={priority}
         />
       </div>
       <div className="project-caption">

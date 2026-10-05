@@ -1,20 +1,20 @@
 @import "tailwindcss";
 :root {
   --cream: #f4f1ec;
-  --paper: #fffaf7;
-  --pink: #ffdce7;
-  --chocolate: #3c1b14;
-  --ink: #3c1b14;
+  --paper: var(--cream);
+  --pink: #ffecf2;
+  --chocolate: #3d1a14;
+  --ink: #3d1a14;
   --ink-soft: #67483f;
   --muted: #785d54;
-  --line: rgba(60, 27, 20, 0.23);
-  --parchment: #ede5dc;
-  --moss: #3c1b14;
+  --line: rgba(61, 26, 20, 0.23);
+  --parchment: var(--cream);
+  --moss: #3d1a14;
   --fern: #67483f;
-  --sage: #ffdce7;
+  --sage: #ffecf2;
   --clay: #854237;
   --clay-deep: #6c3025;
-  --blush: #ffdce7;
+  --blush: #ffecf2;
   --font-display: var(--font-sbc-display), Georgia, serif;
   --font-sans: var(--font-sbc-sans), Arial, sans-serif;
   --font-mono: var(--font-sbc-mono), monospace;
@@ -220,6 +220,21 @@ img {
   align-items: center;
   gap: 13px;
   text-decoration: none;
+}
+.agency-logo {
+  display: block;
+  width: 90px;
+  height: auto;
+  flex-shrink: 0;
+}
+.college-logo {
+  display: block;
+  width: min(340px, 100%);
+  height: auto;
+}
+.page-hero .college-logo {
+  margin-bottom: 36px;
+  width: min(260px, 100%);
 }
 .wordmark strong {
   font-family: var(--font-display);
@@ -494,6 +509,36 @@ img {
 }
 .project-card:hover .project-arrow {
   background: var(--pink);
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+.logo-cell {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--cream);
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 28px 18px;
+  text-align: center;
+}
+.logo-cell img {
+  max-width: 180px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+}
+.logo-wordmark {
+  font-size: 30px;
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
 .filter-row {
   display: flex;
@@ -827,7 +872,7 @@ img {
   color: var(--pink);
 }
 .resource-art.cream {
-  background: #e7dfd4;
+  background: var(--cream);
 }
 .resource-art h2 {
   font-size: clamp(35px, 4vw, 60px);
@@ -1273,8 +1318,8 @@ img {
   .header-row {
     height: 78px;
   }
-  .wordmark strong {
-    font-size: 34px;
+  .agency-logo {
+    width: 78px;
   }
   .wordmark span {
     display: block;
@@ -1348,6 +1393,9 @@ img {
   .project-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .logo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .project-cover {
     height: 380px;

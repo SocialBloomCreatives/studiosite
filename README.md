@@ -2,6 +2,8 @@
 
 SBC agency website built with Next.js 16, React 19, and Tailwind CSS. The design uses SBC's blush pink, chocolate, and cream palette with spacious typography and real project artwork.
 
+Brand colours are exactly brown `#3D1A14`, pink `#FFECF2`, and off-white `#F4F1EC`. The supplied SVG logo variations are used for the agency wordmark, College identity, and site icon. Export backgrounds were removed and view boxes fitted to the original vector artwork. The site's Instrument Sans / Fraunces typography is retained at the user's request; the supplied logos keep their original letterforms.
+
 ## Run locally
 
 ```sh

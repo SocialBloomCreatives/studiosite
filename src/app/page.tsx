@@ -15,11 +15,6 @@ export default function Home() {
         <div className="wrap">
           <div className="hero-topline">
             <p className="eyebrow">
-              Independent creative agency
-              <br />
-              Strategy × Creativity × AI
-            </p>
-            <p className="eyebrow">
               Lagos, Nigeria
               <br />
               Creating across borders
@@ -32,8 +27,8 @@ export default function Home() {
           </Reveal>
           <div className="hero-bottom">
             <p className="copy">
-              We blend strategy, creativity, and AI to help ambitious businesses
-              craft memorable brands and grow strategically.
+              The Leading Creative Agency Building &amp; Marketing Brands
+              Impossible to Ignore.
             </p>
             <div className="actions">
               <Link href="/contact" className="button">
@@ -52,7 +47,7 @@ export default function Home() {
               alt="SBC's creative director holding a phone displaying the SBC identity"
               fill
               sizes="(max-width: 600px) 100vw, 55vw"
-              preload
+              priority
             />
           </div>
           <div className="hero-statement">
@@ -161,9 +156,49 @@ export default function Home() {
             </Link>
           </SectionHeading>
           <div className="project-grid">
-            {projects.slice(0, 4).map((p) => (
-              <ProjectCard key={p.slug} project={p} />
+            {projects.slice(0, 4).map((p, i) => (
+              <ProjectCard key={p.slug} project={p} priority={i === 0} />
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="section divider">
+        <div className="wrap">
+          <SectionHeading
+            eyebrow="Logos we've made"
+            title={
+              <>
+                Identities built
+                <br />
+                to be <span className="serif">remembered.</span>
+              </>
+            }
+          >
+            <Link className="text-link" href="/portfolio">
+              See them in context <ArrowUpRight size={16} aria-hidden />
+            </Link>
+          </SectionHeading>
+          <div className="logo-grid">
+            <div className="logo-cell">
+              <p className="logo-wordmark">LUMA.</p>
+              <p className="eyebrow">Luma — Beauty</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark serif">Eve effect</p>
+              <p className="eyebrow">Eve Effect — Haircare</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">SECOND SKIN</p>
+              <p className="eyebrow">Second Skin — Fragrance</p>
+            </div>
+            <div className="logo-cell">
+              <img
+                src="/work/zione-secrets/logos/zione-4.svg"
+                alt="Zione Secrets logo"
+                loading="lazy"
+              />
+              <p className="eyebrow">Zione Secrets — Lingerie</p>
+            </div>
           </div>
         </div>
       </section>
@@ -174,7 +209,13 @@ export default function Home() {
               04 / For the founders doing it themselves
             </p>
             <h2 className="section-title">
-              SBC <span className="serif">College</span>
+              <Image
+                src="/brand/sbc-college-brown.svg"
+                width={767}
+                height={191}
+                alt="SBC College"
+                className="college-logo"
+              />
             </h2>
             <p className="copy">
               Building it yourself doesn’t mean building it alone. Learn the
@@ -182,11 +223,8 @@ export default function Home() {
               practical toolkits, courses, and AI resources.
             </p>
             <div className="actions">
-              <Link className="button" href="/college">
-                Explore College <ArrowUpRight size={17} aria-hidden />
-              </Link>
-              <Link className="text-link" href="/resources">
-                Explore resources <ArrowUpRight size={16} aria-hidden />
+              <Link className="button" href="/resources">
+                Explore resources <ArrowUpRight size={17} aria-hidden />
               </Link>
             </div>
           </div>

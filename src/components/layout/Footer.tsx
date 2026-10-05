@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { navPrimary, site } from "@/data/site";
 export function Footer() {
@@ -26,7 +27,13 @@ export function Footer() {
         <div className="footer-columns">
           <div>
             <Link href="/" className="wordmark">
-              <strong>SBC</strong>
+              <Image
+                src="/brand/sbc-logo-cream.svg"
+                width={783}
+                height={305}
+                alt="SBC"
+                className="agency-logo"
+              />
               <span>
                 Social Bloom
                 <br />
