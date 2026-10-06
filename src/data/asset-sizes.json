@@ -11,10 +11,6 @@
     "width": 1400,
     "height": 1750
   },
-  "/work/zione-secrets/05.webp": {
-    "width": 1284,
-    "height": 2778
-  },
   "/work/zione-secrets/04.webp": {
     "width": 1400,
     "height": 1575
@@ -68,8 +64,8 @@
     "height": 1350
   },
   "/work/luma/cover.webp": {
-    "width": 928,
-    "height": 1150
+    "width": 1200,
+    "height": 674
   },
   "/work/luma/02.webp": {
     "width": 928,
@@ -238,5 +234,13 @@
   "/work/eve-effect/07.webp": {
     "width": 1122,
     "height": 1402
+  },
+  "/work/allay-house/cover.webp": {
+    "width": 1284,
+    "height": 2778
+  },
+  "/work/allay-house/01.webp": {
+    "width": 1284,
+    "height": 2778
   }
 }

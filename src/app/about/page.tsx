@@ -42,7 +42,7 @@ export default function About() {
             </h2>
             <div className="copy mt-7">
               <p>
-                Social Bloom Creatives Agency is a creative agency led by brand
+                Social Bloom Creatives Agency creative agency led by brand
                 strategist and creative director Midey. We design identities
                 that feel current, create content that people actually engage
                 with, and build brands that are clear, cohesive, and instantly
@@ -56,7 +56,7 @@ export default function About() {
                 grounded in insight and built to last.
               </p>
               <p>
-                Every engagement starts with understanding — your audience, your
+                Every engagement starts with understanding- your audience, your
                 vision, your market. We bring the creative architecture to make
                 it real.
               </p>

@@ -14,7 +14,9 @@ export type Project = {
   galleryCount: number;
   pages: string;
   highlights?: { title: string; text: string }[];
-  videos?: { title: string; href: string }[];
+  videos?: { title: string; href: string; poster?: string }[];
+  website?: string;
+  textCover?: boolean;
 };
 // Mapped to the June 2026 SBC Agency Portfolio. Synn is the spelling in the
 // project's own identity; the index inconsistently says Skynn. BLE's detailed
@@ -99,6 +101,23 @@ export const projects: Project[] = [
       "Second Skin entered the market with strategy, identity, content direction, and a physical brand experience working together from day one.",
     galleryCount: 5,
     pages: "22–23",
+    videos: [
+      {
+        title: "After Hours — film 01",
+        href: "/work/second-skin/videos/01.mp4",
+        poster: "/work/second-skin/videos/01-poster.webp",
+      },
+      {
+        title: "After Hours — film 02",
+        href: "/work/second-skin/videos/02.mp4",
+        poster: "/work/second-skin/videos/02-poster.webp",
+      },
+      {
+        title: "After Hours — film 03",
+        href: "/work/second-skin/videos/03.mp4",
+        poster: "/work/second-skin/videos/03-poster.webp",
+      },
+    ],
   },
   {
     slug: "zione-secrets",
@@ -126,7 +145,7 @@ export const projects: Project[] = [
     ],
     outcome:
       "A more cohesive, lifestyle-led presence designed for connection and long-term growth.",
-    galleryCount: 5,
+    galleryCount: 4,
     pages: "19–21",
   },
   {
@@ -154,14 +173,69 @@ export const projects: Project[] = [
     ],
     galleryCount: 2,
     pages: "9–10",
+    textCover: true,
     videos: [
       {
-        title: "Watch the campaign reel",
-        href: "https://www.instagram.com/reel/DW1sFtlhAH9/",
+        title: "Beach day — film 01",
+        href: "/work/maek-glasses/videos/01.mp4",
+        poster: "/work/maek-glasses/videos/01-poster.webp",
       },
       {
-        title: "Explore another campaign reel",
-        href: "https://www.instagram.com/reel/DXhdnG5hWiM/",
+        title: "Campaign — film 02",
+        href: "/work/maek-glasses/videos/02.mp4",
+        poster: "/work/maek-glasses/videos/02-poster.webp",
+      },
+      {
+        title: "Renewal — film 03",
+        href: "/work/maek-glasses/videos/03.mp4",
+        poster: "/work/maek-glasses/videos/03-poster.webp",
+      },
+    ],
+  },
+  {
+    slug: "allay-house",
+    name: "Allay House",
+    industry: "Beauty & wellness",
+    location: "Lagos, Nigeria",
+    headline: "A space Lagos was missing.",
+    summary:
+      "Social media management and content creation for Allay House — spa, pilates, events, and the launch of a first-of-its-kind space.",
+    categories: ["Social", "Campaigns"],
+    scope: [
+      "Social media management",
+      "Content creation",
+      "Creative direction",
+      "Launch content",
+    ],
+    challenge:
+      "Allay House was opening a first-of-its-kind wellness, beauty, and movement space in Lagos and needed content that could introduce the space and carry everyday engagement.",
+    brief:
+      "Manage the social presence and create launch and lifestyle content across spa treatments, the build-out, pilates, lash, and events.",
+    approach: [
+      "We directed and edited launch storytelling, from the construction journey to treatment moments and in-space lifestyle.",
+      "Ongoing management keeps the grid active across services, events, and community moments.",
+    ],
+    outcome:
+      "Launch and lifestyle content reaching six-figure views, including Reels over 100K views.",
+    galleryCount: 1,
+    pages: "New",
+    textCover: true,
+    website: "https://www.allayhouse.com",
+    videos: [
+      {
+        title: "The space — film 01",
+        href: "/work/allay-house/videos/01.mp4",
+        poster: "/work/allay-house/videos/01-poster.webp",
+      },
+      {
+        title: "Treatments — film 02",
+        href: "/work/allay-house/videos/02.mp4",
+        poster: "/work/allay-house/videos/02-poster.webp",
+      },
+      {
+        title: "Movement — film 03",
+        href: "/work/allay-house/videos/03.mp4",
+        poster: "/work/allay-house/videos/03-poster.webp",
       },
     ],
   },

@@ -41,13 +41,14 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-media">
-          <div className="hero-photo">
+          <div className="hero-photo hero-photo-logo">
             <Image
-              src="/brand/studio.webp"
-              alt="SBC's creative director holding a phone displaying the SBC identity"
+              src="/brand/sbc-hero-logo.svg"
+              alt="SBC — Social Bloom Creatives"
               fill
               sizes="(max-width: 600px) 100vw, 55vw"
               priority
+              style={{ objectFit: "contain" }}
             />
           </div>
           <div className="hero-statement">
@@ -65,7 +66,18 @@ export default function Home() {
                 <br />A brand built to grow.
               </p>
               <span className="bloom-star" aria-hidden>
-                ✳
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M36 0c1.7 18.8 17.2 34.3 36 36-18.8 1.7-34.3 17.2-36 36-1.7-18.8-17.2-34.3-36-36 18.8-1.7 34.3-17.2 36-36Z"
+                    fill="currentColor"
+                  />
+                </svg>
               </span>
             </div>
           </div>
@@ -81,32 +93,6 @@ export default function Home() {
           "SBC College",
         ]}
       />
-      <section className="section">
-        <div className="wrap intro-grid">
-          <p className="eyebrow">01 / More than a creative agency</p>
-          <Reveal>
-            <h2 className="section-title">
-              Big ideas deserve
-              <br />a <span className="serif">clear direction.</span>
-            </h2>
-            <div className="copy">
-              <p>
-                For founders with big ideas and a lot on their plates, we bring
-                the strategy and creative thinking that make a brand feel
-                intentional, memorable, and ready for what’s next.
-              </p>
-              <p>
-                From brand identity and positioning to websites, content
-                systems, and AI-powered workflows, we create the foundations
-                that help businesses grow with clarity and confidence.
-              </p>
-            </div>
-            <Link className="text-link mt-8" href="/about">
-              Get to know SBC <ArrowUpRight size={16} aria-hidden />
-            </Link>
-          </Reveal>
-        </div>
-      </section>
       <section className="section divider">
         <div className="wrap">
           <SectionHeading
@@ -142,6 +128,48 @@ export default function Home() {
       <section className="section divider">
         <div className="wrap">
           <SectionHeading
+            eyebrow="Logos we've made"
+            title={
+              <>
+                Identities built
+                <br />
+                to be <span className="serif">remembered.</span>
+              </>
+            }
+          >
+            <Link className="text-link" href="/portfolio">
+              See them in context <ArrowUpRight size={16} aria-hidden />
+            </Link>
+          </SectionHeading>
+          <div className="logo-grid">
+            <div className="logo-cell">
+              <p className="logo-wordmark">LUMA.</p>
+              <p className="eyebrow">Luma — Beauty</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">Eve effect</p>
+              <p className="eyebrow">Eve Effect — Haircare</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">SECOND SKIN</p>
+              <p className="eyebrow">Second Skin — Fragrance</p>
+            </div>
+            <div className="logo-cell">
+              <Image
+                src="/work/zione-secrets/logos/zione-4.svg"
+                alt="Zione Secrets logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
+              <p className="eyebrow">Zione Secrets — Lingerie</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section divider">
+        <div className="wrap">
+          <SectionHeading
             eyebrow="03 / Selected work"
             title={
               <>
@@ -165,39 +193,31 @@ export default function Home() {
       <section className="section divider">
         <div className="wrap">
           <SectionHeading
-            eyebrow="Logos we've made"
+            eyebrow="Websites"
             title={
               <>
-                Identities built
+                Brands, live
                 <br />
-                to be <span className="serif">remembered.</span>
+                <span className="serif">online.</span>
               </>
             }
           >
-            <Link className="text-link" href="/portfolio">
-              See them in context <ArrowUpRight size={16} aria-hidden />
+            <Link className="text-link" href="/portfolio/allay-house">
+              See the case study <ArrowUpRight size={16} aria-hidden />
             </Link>
           </SectionHeading>
           <div className="logo-grid">
             <div className="logo-cell">
-              <p className="logo-wordmark">LUMA.</p>
-              <p className="eyebrow">Luma — Beauty</p>
-            </div>
-            <div className="logo-cell">
-              <p className="logo-wordmark serif">Eve effect</p>
-              <p className="eyebrow">Eve Effect — Haircare</p>
-            </div>
-            <div className="logo-cell">
-              <p className="logo-wordmark">SECOND SKIN</p>
-              <p className="eyebrow">Second Skin — Fragrance</p>
-            </div>
-            <div className="logo-cell">
-              <img
-                src="/work/zione-secrets/logos/zione-4.svg"
-                alt="Zione Secrets logo"
-                loading="lazy"
-              />
-              <p className="eyebrow">Zione Secrets — Lingerie</p>
+              <p className="logo-wordmark">Allay House</p>
+              <p className="eyebrow">Beauty & wellness — Lagos</p>
+              <a
+                className="text-link mt-4"
+                href="https://www.allayhouse.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit website <ArrowUpRight size={16} aria-hidden />
+              </a>
             </div>
           </div>
         </div>

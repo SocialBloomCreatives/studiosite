@@ -134,19 +134,54 @@ export default async function ProjectPage({
               </figure>
             ))}
           </div>
-          {project.videos && (
+          {project.videos &&
+            project.videos.some((v) => v.href.endsWith(".mp4")) && (
+              <div className="video-grid">
+                {project.videos
+                  .filter((v) => v.href.endsWith(".mp4"))
+                  .map((v) => (
+                    <figure key={v.href}>
+                      <video
+                        controls
+                        preload="metadata"
+                        poster={v.poster}
+                        src={v.href}
+                      />
+                      <figcaption className="eyebrow mt-4">
+                        {v.title}
+                      </figcaption>
+                    </figure>
+                  ))}
+              </div>
+            )}
+          {project.videos &&
+            project.videos.some((v) => !v.href.endsWith(".mp4")) && (
+              <div className="actions mt-8">
+                {project.videos
+                  .filter((v) => !v.href.endsWith(".mp4"))
+                  .map((v) => (
+                    <a
+                      className="button outline"
+                      href={v.href}
+                      key={v.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {v.title} <ArrowUpRight size={16} aria-hidden />
+                    </a>
+                  ))}
+              </div>
+            )}
+          {project.website && (
             <div className="actions mt-8">
-              {project.videos.map((v) => (
-                <a
-                  className="button outline"
-                  href={v.href}
-                  key={v.href}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {v.title} <ArrowUpRight size={16} aria-hidden />
-                </a>
-              ))}
+              <a
+                className="button"
+                href={project.website}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit live website <ArrowUpRight size={16} aria-hidden />
+              </a>
             </div>
           )}
         </div>

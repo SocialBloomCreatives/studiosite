@@ -9,18 +9,16 @@ const display = localFont({
   variable: "--font-sbc-display",
   display: "swap",
   src: [
-    { path: "./fonts/fraunces-regular.ttf", weight: "400", style: "normal" },
-    { path: "./fonts/fraunces-semibold.ttf", weight: "600", style: "normal" },
-    { path: "./fonts/fraunces-italic.ttf", weight: "400", style: "italic" },
+    { path: "./fonts/instrument-serif-regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/instrument-serif-italic.ttf", weight: "400", style: "italic" },
   ],
 });
 const sans = localFont({
   variable: "--font-sbc-sans",
   display: "swap",
   src: [
-    { path: "./fonts/instrument-regular.ttf", weight: "400" },
-    { path: "./fonts/instrument-medium.ttf", weight: "500" },
-    { path: "./fonts/instrument-semibold.ttf", weight: "600" },
+    { path: "./fonts/instrument-serif-regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/instrument-serif-italic.ttf", weight: "400", style: "italic" },
   ],
 });
 const mono = localFont({
@@ -28,6 +26,14 @@ const mono = localFont({
   display: "swap",
   src: "./fonts/plex-mono.ttf",
   weight: "400",
+});
+const instrumentSerif = localFont({
+  variable: "--font-instrument-serif",
+  display: "swap",
+  src: [
+    { path: "./fonts/instrument-serif-regular.ttf", weight: "400", style: "normal" },
+    { path: "./fonts/instrument-serif-italic.ttf", weight: "400", style: "italic" },
+  ],
 });
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
@@ -73,7 +79,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${display.variable} ${sans.variable} ${mono.variable}`}
+      className={`${display.variable} ${sans.variable} ${mono.variable} ${instrumentSerif.variable}`}
     >
       <body>
         <script
