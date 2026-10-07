@@ -66,14 +66,17 @@ export function Footer() {
             <span className="eyebrow">A little more fun</span>
             {site.socials.map((s) => (
               <a key={s.label} href={s.href} target="_blank" rel="noreferrer">
-                {s.label} ↗
+                {s.label}{" "}
+                <ArrowUpRight size={12} aria-hidden style={{ verticalAlign: "-1px" }} />
               </a>
             ))}
             <a href={site.whatsapp} target="_blank" rel="noreferrer">
-              WhatsApp ↗
+              WhatsApp{" "}
+              <ArrowUpRight size={12} aria-hidden style={{ verticalAlign: "-1px" }} />
             </a>
             <a href={site.portfolio} target="_blank" rel="noreferrer">
-              Full portfolio ↗
+              Full portfolio{" "}
+              <ArrowUpRight size={12} aria-hidden style={{ verticalAlign: "-1px" }} />
             </a>
             <Link href="/faq">FAQ</Link>
           </nav>

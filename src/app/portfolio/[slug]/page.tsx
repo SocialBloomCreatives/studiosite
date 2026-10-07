@@ -64,13 +64,29 @@ export default async function ProjectPage({
           </div>
         </div>
         <div className="case-cover">
-          <Image
-            src={`/work/${project.slug}/cover.webp`}
-            alt={`${project.name} project artwork from the SBC Agency Portfolio`}
-            fill
-            sizes="100vw"
-            priority
-          />
+          {project.textCover && project.videos?.[0]?.poster ? (
+            <Image
+              src={project.videos[0].poster}
+              alt={`${project.name} campaign film still`}
+              width={
+                sizes[project.videos[0].poster]?.width ?? 720
+              }
+              height={
+                sizes[project.videos[0].poster]?.height ?? 1280
+              }
+              style={{ width: "100%", height: "auto" }}
+              sizes="100vw"
+              priority
+            />
+          ) : (
+            <Image
+              src={`/work/${project.slug}/cover.webp`}
+              alt={`${project.name} project artwork from the SBC Agency Portfolio`}
+              fill
+              sizes="100vw"
+              priority
+            />
+          )}
         </div>
       </div>
       <section className="section">
@@ -181,6 +197,28 @@ export default async function ProjectPage({
                 rel="noreferrer"
               >
                 Visit live website <ArrowUpRight size={16} aria-hidden />
+              </a>
+              {project.instagram && (
+                <a
+                  className="text-link"
+                  href={project.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View on Instagram <ArrowUpRight size={16} aria-hidden />
+                </a>
+              )}
+            </div>
+          )}
+          {!project.website && project.instagram && (
+            <div className="actions mt-8">
+              <a
+                className="button outline"
+                href={project.instagram}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View on Instagram <ArrowUpRight size={16} aria-hidden />
               </a>
             </div>
           )}

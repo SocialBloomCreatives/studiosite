@@ -363,10 +363,6 @@ img {
   position: relative;
   min-height: 590px;
 }
-.hero-photo-logo {
-  background: var(--pink);
-  padding: 60px;
-}
 .hero-photo img {
   object-fit: cover;
   object-position: center 38%;
@@ -416,6 +412,10 @@ img {
 .ticker-track i {
   font-style: normal;
   font-size: 22px;
+  display: inline-flex;
+}
+.ticker-track i svg {
+  display: block;
 }
 .ticker:hover .ticker-track {
   animation-play-state: paused;
@@ -762,7 +762,7 @@ img {
   gap: 20px;
 }
 .service-detail-list li::before {
-  content: "↗";
+  content: "→";
   color: var(--clay);
 }
 .case-cover {
@@ -885,8 +885,13 @@ img {
   line-height: 1.7;
 }
 .campus-benefits li::before {
-  content: "✳";
-  color: var(--pink);
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  margin-top: 9px;
+  background: var(--pink);
+  transform: rotate(45deg);
 }
 .resource-grid {
   display: grid;

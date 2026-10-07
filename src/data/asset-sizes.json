@@ -47,18 +47,6 @@
     "width": 386,
     "height": 480
   },
-  "/work/maek-glasses/cover.webp": {
-    "width": 720,
-    "height": 1280
-  },
-  "/work/maek-glasses/02.webp": {
-    "width": 576,
-    "height": 1024
-  },
-  "/work/maek-glasses/01.webp": {
-    "width": 720,
-    "height": 1280
-  },
   "/work/luma/03.webp": {
     "width": 1080,
     "height": 1350
@@ -82,30 +70,6 @@
   "/work/luma/01.webp": {
     "width": 928,
     "height": 1150
-  },
-  "/work/synn/03.webp": {
-    "width": 1200,
-    "height": 675
-  },
-  "/work/synn/cover.webp": {
-    "width": 1200,
-    "height": 675
-  },
-  "/work/synn/02.webp": {
-    "width": 1200,
-    "height": 675
-  },
-  "/work/synn/05.webp": {
-    "width": 1200,
-    "height": 675
-  },
-  "/work/synn/04.webp": {
-    "width": 1200,
-    "height": 675
-  },
-  "/work/synn/01.webp": {
-    "width": 1200,
-    "height": 675
   },
   "/work/breathe-live-explore/03.webp": {
     "width": 514,
@@ -171,22 +135,6 @@
     "width": 884,
     "height": 1250
   },
-  "/work/kynda/03.webp": {
-    "width": 948,
-    "height": 1600
-  },
-  "/work/kynda/cover.webp": {
-    "width": 948,
-    "height": 1600
-  },
-  "/work/kynda/02.webp": {
-    "width": 948,
-    "height": 1600
-  },
-  "/work/kynda/01.webp": {
-    "width": 948,
-    "height": 1600
-  },
   "/work/luma/06.webp": {
     "width": 1024,
     "height": 1536
@@ -242,5 +190,33 @@
   "/work/allay-house/01.webp": {
     "width": 1284,
     "height": 2778
+  },
+  "/work/maek-glasses/videos/01-poster.webp": {
+    "width": 720,
+    "height": 1280
+  },
+  "/work/allay-house/videos/01-poster.webp": {
+    "width": 720,
+    "height": 1280
+  },
+  "/work/luma/10.webp": {
+    "width": 960,
+    "height": 1107
+  },
+  "/work/luma/11.webp": {
+    "width": 1400,
+    "height": 1400
+  },
+  "/work/luma/12.webp": {
+    "width": 1396,
+    "height": 1127
+  },
+  "/work/luma/13.webp": {
+    "width": 960,
+    "height": 1097
+  },
+  "/work/luma/14.webp": {
+    "width": 1400,
+    "height": 1400
   }
 }

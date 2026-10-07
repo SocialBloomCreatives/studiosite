@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import { InquiryForm } from "@/components/InquiryForm";
 import { site } from "@/data/site";
@@ -45,7 +46,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                WhatsApp · {site.phone} ↗
+                WhatsApp · {site.phone}{" "}
+                <ArrowUpRight size={14} aria-hidden style={{ verticalAlign: "-2px" }} />
               </a>
               <p className="eyebrow">
                 {site.location}

@@ -41,14 +41,13 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-media">
-          <div className="hero-photo hero-photo-logo">
+          <div className="hero-photo">
             <Image
-              src="/brand/sbc-hero-logo.svg"
-              alt="SBC — Social Bloom Creatives"
+              src="/brand/studio.webp"
+              alt="SBC's creative director holding a phone displaying the SBC identity"
               fill
               sizes="(max-width: 600px) 100vw, 55vw"
               priority
-              style={{ objectFit: "contain" }}
             />
           </div>
           <div className="hero-statement">
@@ -143,15 +142,33 @@ export default function Home() {
           </SectionHeading>
           <div className="logo-grid">
             <div className="logo-cell">
-              <p className="logo-wordmark">LUMA.</p>
+              <Image
+                src="/brand/logos/luma-silver.svg"
+                alt="Luma logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
               <p className="eyebrow">Luma — Beauty</p>
             </div>
             <div className="logo-cell">
-              <p className="logo-wordmark">Eve effect</p>
+              <Image
+                src="/brand/logos/eve-wordmark.svg"
+                alt="Eve Effect logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
               <p className="eyebrow">Eve Effect — Haircare</p>
             </div>
             <div className="logo-cell">
-              <p className="logo-wordmark">SECOND SKIN</p>
+              <Image
+                src="/brand/logos/second-skin-primary.svg"
+                alt="Second Skin logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
               <p className="eyebrow">Second Skin — Fragrance</p>
             </div>
             <div className="logo-cell">
@@ -163,6 +180,34 @@ export default function Home() {
                 style={{ width: "auto", height: "auto" }}
               />
               <p className="eyebrow">Zione Secrets — Lingerie</p>
+            </div>
+            <div className="logo-cell">
+              <Image
+                src="/brand/logos/dear-amorea.svg"
+                alt="Dear Amorea logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
+              <p className="eyebrow">Dear Amorea — Brand identity</p>
+            </div>
+            <div className="logo-cell">
+              <Image
+                src="/brand/logos/oknotsorry.svg"
+                alt="OknotSorry logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
+              <p className="eyebrow">OknotSorry — Brand identity</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">Maek Glasses</p>
+              <p className="eyebrow">Maek Glasses — Eyewear</p>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">Allay House</p>
+              <p className="eyebrow">Allay House — Beauty & wellness</p>
             </div>
           </div>
         </div>
@@ -213,6 +258,18 @@ export default function Home() {
               <a
                 className="text-link mt-4"
                 href="https://www.allayhouse.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit website <ArrowUpRight size={16} aria-hidden />
+              </a>
+            </div>
+            <div className="logo-cell">
+              <p className="logo-wordmark">LUMA.</p>
+              <p className="eyebrow">Beauty — Lagos & diaspora</p>
+              <a
+                className="text-link mt-4"
+                href="https://www.shopwithluma.com"
                 target="_blank"
                 rel="noreferrer"
               >

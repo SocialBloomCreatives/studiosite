@@ -96,13 +96,22 @@ export function ResourceShop() {
               <h2>{r.name}</h2>
               <div className="eyebrow">For founders building it themselves</div>
               <span className="resource-symbol" aria-hidden>
-                {r.symbol === "02"
-                  ? "✳"
-                  : r.symbol === "03"
-                    ? "⊞"
-                    : r.symbol === "04"
-                      ? "◉"
-                      : "↗"}
+                {r.symbol === "02" ? (
+                  <svg
+                    width="0.9em"
+                    height="0.9em"
+                    viewBox="0 0 72 72"
+                    fill="currentColor"
+                  >
+                    <path d="M36 0c1.7 18.8 17.2 34.3 36 36-18.8 1.7-34.3 17.2-36 36-1.7-18.8-17.2-34.3-36-36 18.8-1.7 34.3-17.2 36-36Z" />
+                  </svg>
+                ) : r.symbol === "03" ? (
+                  "⊞"
+                ) : r.symbol === "04" ? (
+                  "◉"
+                ) : (
+                  <ArrowUpRight width="0.9em" height="0.9em" />
+                )}
               </span>
             </div>
             <div className="resource-info">

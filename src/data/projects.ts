@@ -16,6 +16,7 @@ export type Project = {
   highlights?: { title: string; text: string }[];
   videos?: { title: string; href: string; poster?: string }[];
   website?: string;
+  instagram?: string;
   textCover?: boolean;
 };
 // Mapped to the June 2026 SBC Agency Portfolio. Synn is the spelling in the
@@ -46,8 +47,9 @@ export const projects: Project[] = [
       "We created a butter-yellow and silver visual world, with a complete identity and product packaging system.",
       "The brand strategy covered positioning, audience profiling, content pillars, and competitor analysis. A personal brand strategy for the founder and a 30-day Instagram calendar translated that direction into launch content.",
     ],
-    galleryCount: 9,
+    galleryCount: 14,
     pages: "6–8",
+    website: "https://www.shopwithluma.com",
   },
   {
     slug: "eve-effect",
@@ -101,6 +103,7 @@ export const projects: Project[] = [
       "Second Skin entered the market with strategy, identity, content direction, and a physical brand experience working together from day one.",
     galleryCount: 5,
     pages: "22–23",
+    instagram: "https://www.instagram.com/seconddskinn",
     videos: [
       {
         title: "After Hours — film 01",
@@ -147,6 +150,7 @@ export const projects: Project[] = [
       "A more cohesive, lifestyle-led presence designed for connection and long-term growth.",
     galleryCount: 4,
     pages: "19–21",
+    instagram: "https://www.instagram.com/zionesecrets",
   },
   {
     slug: "maek-glasses",
@@ -171,9 +175,10 @@ export const projects: Project[] = [
       "We handled creative direction, campaign planning, and the shoot. Three edited video posts, raw footage, and supporting lifestyle images formed the delivery.",
       "The concepts included a beach-day outfit moment, a campaign ad, and a playful film built around girlhood and an easy day by the sea.",
     ],
-    galleryCount: 2,
+    galleryCount: 0,
     pages: "9–10",
     textCover: true,
+    instagram: "https://www.instagram.com/maekeyewear",
     videos: [
       {
         title: "Beach day — film 01",
@@ -221,6 +226,7 @@ export const projects: Project[] = [
     pages: "New",
     textCover: true,
     website: "https://www.allayhouse.com",
+    instagram: "https://www.instagram.com/theallayhouse",
     videos: [
       {
         title: "The space — film 01",
@@ -238,55 +244,6 @@ export const projects: Project[] = [
         poster: "/work/allay-house/videos/03-poster.webp",
       },
     ],
-  },
-  {
-    slug: "kynda",
-    name: "Kynda",
-    industry: "Fashion accessories",
-    location: "Nigeria",
-    headline: "Warmth you can carry with you.",
-    summary:
-      "A warm, earthy visual identity for a store specialising in pouches and personalised bags.",
-    categories: ["Branding"],
-    scope: ["Logo suite", "Colour palette", "Typography", "Packaging & labels"],
-    challenge:
-      "Kynda's products had a warm, tactile personality, but the store lacked a cohesive identity that customers could recognise and return to.",
-    brief:
-      "Build a versatile visual identity that works across packaging, product tags, labels, sticker seals, and future touchpoints.",
-    approach: [
-      "We developed a complete logo suite with variations for different applications, an earthy colour palette, and typography that carries the brand's personality.",
-      "The system brings packaging, product labels, sticker seals, and branded tags together into a consistent, recognisable presence.",
-    ],
-    outcome:
-      "A cohesive identity that reflects the character and quality of Kynda's products.",
-    galleryCount: 3,
-    pages: "15–16",
-  },
-  {
-    slug: "synn",
-    name: "Synn",
-    industry: "Loungewear",
-    location: "Lagos, Nigeria",
-    headline: "Comfort, with a signature.",
-    summary:
-      "A deep-burgundy brand world that connects effortless loungewear, packaging, and an intentional social presence.",
-    categories: ["Branding", "Social"],
-    scope: [
-      "Visual identity",
-      "Product branding",
-      "Packaging",
-      "Social strategy & management",
-    ],
-    challenge:
-      "Synn had a vision for effortless luxury loungewear and lingerie, but no visual foundation, strategy, or social presence to support its launch.",
-    brief:
-      "Build the brand across identity, product, packaging, and social media, with an Instagram presence that feels premium from the first post.",
-    approach: [
-      "We built the identity around a deep-burgundy and cream palette, a logo system, and packaging details. The Synn monogram appears on signature tanks and sets.",
-      "Campaign imagery at airports, tennis courts, and on the street sits alongside product details, unboxing content, and flat-lays, tied together by a consistent visual world.",
-    ],
-    galleryCount: 5,
-    pages: "17–18",
   },
   {
     slug: "big-and-tall",
