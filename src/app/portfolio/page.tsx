@@ -20,7 +20,7 @@ export default function Portfolio() {
             Work with <span className="serif">intention.</span>
           </>
         }
-        lede="A look at the brands we’ve helped build and the stories we’ve brought to life, across Lagos, the UK, and Canada."
+        lede="A look at the brands we’ve helped build and the stories we’ve brought to life, across Lagos, the UK, Canada, and Australia."
       >
         <a
           className="text-link"

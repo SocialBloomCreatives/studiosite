@@ -7,12 +7,20 @@ const sizes: Record<string, { width: number; height: number }> = assetSizes;
 export function ProjectCard({
   project,
   priority = false,
+  externalHref,
 }: {
   project: Project;
   priority?: boolean;
+  externalHref?: string;
 }) {
+  const href = externalHref ?? `/portfolio/${project.slug}`;
+  const external = Boolean(externalHref);
   return (
-    <Link href={`/portfolio/${project.slug}`} className="project-card">
+    <Link
+      href={href}
+      className="project-card"
+      {...(external ? { target: "_blank", rel: "noreferrer" } : {})}
+    >
       {project.textCover ? (
         <div className="project-text-cover" aria-hidden>
           <span>{project.name}</span>

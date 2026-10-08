@@ -9,6 +9,24 @@ import { Testimonials } from "@/components/Testimonials";
 import { services } from "@/data/services";
 import { projects } from "@/data/projects";
 export default function Home() {
+  const clientLogos = [
+    { src: "/brand/logos/luma-silver.svg", alt: "Luma logo" },
+    { src: "/brand/logos/eve-wordmark.svg", alt: "Eve Effect logo" },
+    {
+      src: "/brand/logos/second-skin-primary.svg",
+      alt: "Second Skin logo",
+    },
+    {
+      src: "/work/zione-secrets/logos/zione-4.svg",
+      alt: "Zione Secrets logo",
+    },
+    { src: "/brand/logos/dear-amorea.svg", alt: "Dear Amorea logo" },
+    { src: "/brand/logos/oknotsorry.svg", alt: "OknotSorry logo" },
+    {
+      src: "/brand/logos/off-the-street.svg",
+      alt: "Off the Street logo",
+    },
+  ];
   return (
     <>
       <section className="home-hero">
@@ -92,6 +110,50 @@ export default function Home() {
           "SBC College",
         ]}
       />
+      <section className="section dark">
+        <div className="wrap split">
+          <div className="portrait">
+            <Image
+              src="/brand/about-home-v2.webp"
+              alt="SBC creative director"
+              fill
+              sizes="(max-width: 900px) 100vw, 45vw"
+            />
+          </div>
+          <div>
+            <p className="eyebrow">This is SBC Agency</p>
+            <h2 className="section-title">
+              A creative partner
+              <br />
+              for your <span className="serif">next chapter.</span>
+            </h2>
+            <div className="copy mt-7">
+              <p>
+                Social Bloom Creatives Agency creative agency led by brand
+                strategist and creative director Midey. We design identities
+                that feel current, create content that people actually engage
+                with, and build brands that are clear, cohesive, and instantly
+                recognisable.
+              </p>
+              <p>
+                From visuals, brand strategy to social media management and full
+                content direction, we deliver work that&apos;s intentional and
+                designed to work using a modern creative system designed for how
+                brands grow today, through storytelling, identity, and culture
+                grounded in insight and built to last.
+              </p>
+              <p>
+                Every engagement starts with understanding- your audience, your
+                vision, your market. We bring the creative architecture to make
+                it real.
+              </p>
+            </div>
+            <Link className="text-link mt-8" href="/about">
+              Get to know SBC <ArrowUpRight size={16} aria-hidden />
+            </Link>
+          </div>
+        </div>
+      </section>
       <section className="section divider">
         <div className="wrap">
           <SectionHeading
@@ -135,74 +197,20 @@ export default function Home() {
                 to be <span className="serif">remembered.</span>
               </>
             }
-          >
-            <Link className="text-link" href="/portfolio">
-              See them in context <ArrowUpRight size={16} aria-hidden />
-            </Link>
-          </SectionHeading>
-          <div className="logo-grid">
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/luma-silver.svg"
-                alt="Luma logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/eve-wordmark.svg"
-                alt="Eve Effect logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/second-skin-primary.svg"
-                alt="Second Skin logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/work/zione-secrets/logos/zione-4.svg"
-                alt="Zione Secrets logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/dear-amorea.svg"
-                alt="Dear Amorea logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/oknotsorry.svg"
-                alt="OknotSorry logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
-            </div>
-            <div className="logo-cell">
-              <Image
-                src="/brand/logos/off-the-street.svg"
-                alt="Off the Street logo"
-                width={220}
-                height={110}
-                style={{ width: "auto", height: "auto" }}
-              />
+          />
+          <div className="ticker logo-ticker" aria-hidden="true">
+            <div className="ticker-track">
+              {[...clientLogos, ...clientLogos].map((l, i) => (
+                <span key={i} className="logo-ticker-item">
+                  <Image
+                    src={l.src}
+                    alt={l.alt}
+                    width={240}
+                    height={120}
+                    style={{ width: "auto", height: 76 }}
+                  />
+                </span>
+              ))}
             </div>
           </div>
         </div>
@@ -225,7 +233,12 @@ export default function Home() {
           </SectionHeading>
           <div className="project-grid">
             {projects.slice(0, 5).map((p, i) => (
-              <ProjectCard key={p.slug} project={p} priority={i === 0} />
+              <ProjectCard
+                key={p.slug}
+                project={p}
+                priority={i === 0}
+                externalHref={p.instagram}
+              />
             ))}
           </div>
         </div>
@@ -233,25 +246,25 @@ export default function Home() {
       <section className="section divider">
         <div className="wrap">
           <SectionHeading
-            eyebrow="Websites"
+            eyebrow="Websites we've made"
             title={
               <>
-                Brands, live
-                <br />
-                <span className="serif">online.</span>
+                Brands, live <span className="serif">online.</span>
               </>
             }
-          >
-            <Link className="text-link" href="/portfolio/allay-house">
-              See the case study <ArrowUpRight size={16} aria-hidden />
-            </Link>
-          </SectionHeading>
-          <div className="logo-grid">
-            <div className="logo-cell">
-              <p className="logo-wordmark font-montserrat">Allay House</p>
-              <p className="eyebrow">Beauty & wellness — Lagos</p>
+          />
+          <div className="site-grid">
+            <div className="site-card">
+              <div>
+                <h3>Allay House</h3>
+                <p className="site-meta">
+                  Beauty, Wellness &amp; lifestyle
+                  <br />
+                  Service based (Lagos, Nigeria)
+                </p>
+              </div>
               <a
-                className="text-link mt-4"
+                className="button pink"
                 href="https://www.allayhouse.com"
                 target="_blank"
                 rel="noreferrer"
@@ -259,11 +272,17 @@ export default function Home() {
                 Visit website <ArrowUpRight size={16} aria-hidden />
               </a>
             </div>
-            <div className="logo-cell">
-              <p className="logo-wordmark font-montserrat">LUMA.</p>
-              <p className="eyebrow">Beauty — Lagos & diaspora</p>
+            <div className="site-card">
+              <div>
+                <h3>LUMA.</h3>
+                <p className="site-meta">
+                  Beauty
+                  <br />
+                  E-commerce (Lagos, Nigeria and Diaspora)
+                </p>
+              </div>
               <a
-                className="text-link mt-4"
+                className="button pink"
                 href="https://www.shopwithluma.com"
                 target="_blank"
                 rel="noreferrer"

@@ -27,9 +27,16 @@ export default async function ServicePage({
   const { slug } = await params;
   const service = services.find((s) => s.slug === slug);
   if (!service) notFound();
-  const related = projects
-    .filter((p) => p.categories.includes(service.category))
-    .slice(0, 2);
+  const featured: Record<string, string[]> = {
+    branding: ["luma", "eve-effect"],
+    "campaign-development": ["zione-secrets", "maek-glasses"],
+    "social-media-management": ["allay-house"],
+    "website-design": [],
+    "brand-strategy": [],
+  };
+  const related = (featured[slug] ?? [])
+    .map((s) => projects.find((p) => p.slug === s))
+    .filter((p) => p !== undefined);
   return (
     <>
       <PageHero
@@ -86,6 +93,58 @@ export default async function ServicePage({
               {related.map((p) => (
                 <ProjectCard project={p} key={p.slug} />
               ))}
+            </div>
+          </div>
+        </section>
+      )}
+      {slug === "website-design" && (
+        <section className="section divider">
+          <div className="wrap">
+            <SectionHeading
+              eyebrow="Websites we've made"
+              title={
+                <>
+                  Brands, live <span className="serif">online.</span>
+                </>
+              }
+            />
+            <div className="site-grid">
+              <div className="site-card">
+                <div>
+                  <h3>Allay House</h3>
+                  <p className="site-meta">
+                    Beauty, Wellness &amp; lifestyle
+                    <br />
+                    Service based (Lagos, Nigeria)
+                  </p>
+                </div>
+                <a
+                  className="button pink"
+                  href="https://www.allayhouse.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit website <ArrowUpRight size={16} aria-hidden />
+                </a>
+              </div>
+              <div className="site-card">
+                <div>
+                  <h3>LUMA.</h3>
+                  <p className="site-meta">
+                    Beauty
+                    <br />
+                    E-commerce (Lagos, Nigeria and Diaspora)
+                  </p>
+                </div>
+                <a
+                  className="button pink"
+                  href="https://www.shopwithluma.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit website <ArrowUpRight size={16} aria-hidden />
+                </a>
+              </div>
             </div>
           </div>
         </section>

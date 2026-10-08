@@ -74,7 +74,7 @@ export default async function ProjectPage({
             alt={`${project.name} project artwork from the SBC Agency Portfolio`}
             width={coverDims.width}
             height={coverDims.height}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            style={{ width: "100%", height: "auto" }}
             sizes="100vw"
             priority
           />

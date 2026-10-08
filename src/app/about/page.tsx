@@ -27,8 +27,8 @@ export default function About() {
         <div className="wrap split">
           <div className="portrait">
             <Image
-              src="/brand/studio.webp"
-              alt="SBC creative director Midey with the agency's visual identity"
+              src="/brand/about-page-v2.webp"
+              alt="Midey, SBC creative director"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"
             />
