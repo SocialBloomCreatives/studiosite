@@ -35,6 +35,11 @@ const instrumentSerif = localFont({
     { path: "./fonts/instrument-serif-italic.ttf", weight: "400", style: "italic" },
   ],
 });
+const montserrat = localFont({
+  variable: "--font-montserrat",
+  display: "swap",
+  src: "./fonts/montserrat-variable.ttf",
+});
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title: {
@@ -79,7 +84,7 @@ export default function RootLayout({
     <html
       lang="en"
       data-scroll-behavior="smooth"
-      className={`${display.variable} ${sans.variable} ${mono.variable} ${instrumentSerif.variable}`}
+      className={`${display.variable} ${sans.variable} ${mono.variable} ${instrumentSerif.variable} ${montserrat.variable}`}
     >
       <body>
         <script

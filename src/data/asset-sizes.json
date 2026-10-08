@@ -47,10 +47,6 @@
     "width": 386,
     "height": 480
   },
-  "/work/luma/03.webp": {
-    "width": 1080,
-    "height": 1350
-  },
   "/work/luma/cover.webp": {
     "width": 1200,
     "height": 674
@@ -59,33 +55,9 @@
     "width": 928,
     "height": 1150
   },
-  "/work/luma/05.webp": {
-    "width": 1122,
-    "height": 1402
-  },
-  "/work/luma/04.webp": {
-    "width": 1080,
-    "height": 1350
-  },
   "/work/luma/01.webp": {
     "width": 928,
     "height": 1150
-  },
-  "/work/breathe-live-explore/03.webp": {
-    "width": 514,
-    "height": 383
-  },
-  "/work/breathe-live-explore/cover.webp": {
-    "width": 675,
-    "height": 844
-  },
-  "/work/breathe-live-explore/02.webp": {
-    "width": 386,
-    "height": 834
-  },
-  "/work/breathe-live-explore/01.webp": {
-    "width": 675,
-    "height": 844
   },
   "/work/second-skin/03.webp": {
     "width": 1024,
@@ -114,42 +86,6 @@
   "/work/second-skin/01.webp": {
     "width": 1400,
     "height": 1400
-  },
-  "/work/big-and-tall/03.webp": {
-    "width": 884,
-    "height": 1250
-  },
-  "/work/big-and-tall/cover.webp": {
-    "width": 884,
-    "height": 1250
-  },
-  "/work/big-and-tall/02.webp": {
-    "width": 884,
-    "height": 1250
-  },
-  "/work/big-and-tall/04.webp": {
-    "width": 884,
-    "height": 1250
-  },
-  "/work/big-and-tall/01.webp": {
-    "width": 884,
-    "height": 1250
-  },
-  "/work/luma/06.webp": {
-    "width": 1024,
-    "height": 1536
-  },
-  "/work/luma/07.webp": {
-    "width": 864,
-    "height": 1227
-  },
-  "/work/luma/08.webp": {
-    "width": 1122,
-    "height": 1402
-  },
-  "/work/luma/09.webp": {
-    "width": 1122,
-    "height": 1402
   },
   "/work/eve-effect/cover.webp": {
     "width": 1122,
@@ -184,8 +120,8 @@
     "height": 1402
   },
   "/work/allay-house/cover.webp": {
-    "width": 1284,
-    "height": 2778
+    "width": 1170,
+    "height": 2532
   },
   "/work/allay-house/01.webp": {
     "width": 1284,
@@ -199,23 +135,47 @@
     "width": 720,
     "height": 1280
   },
-  "/work/luma/10.webp": {
+  "/work/luma/03.webp": {
+    "width": 1080,
+    "height": 1350
+  },
+  "/work/luma/04.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/luma/05.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "/work/luma/06.webp": {
+    "width": 864,
+    "height": 1227
+  },
+  "/work/luma/07.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/luma/08.webp": {
+    "width": 1122,
+    "height": 1402
+  },
+  "/work/luma/09.webp": {
     "width": 960,
     "height": 1107
   },
-  "/work/luma/11.webp": {
+  "/work/luma/10.webp": {
     "width": 1400,
     "height": 1400
   },
-  "/work/luma/12.webp": {
+  "/work/luma/11.webp": {
     "width": 1396,
     "height": 1127
   },
-  "/work/luma/13.webp": {
+  "/work/luma/12.webp": {
     "width": 960,
     "height": 1097
   },
-  "/work/luma/14.webp": {
+  "/work/luma/13.webp": {
     "width": 1400,
     "height": 1400
   }

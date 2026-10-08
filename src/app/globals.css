@@ -547,6 +547,10 @@ img {
   letter-spacing: 0;
   font-weight: 400;
 }
+.font-montserrat {
+  font-family: var(--font-montserrat), Arial, sans-serif;
+  font-weight: 600;
+}
 .project-text-cover {
   height: 460px;
   background: var(--chocolate);
@@ -1440,6 +1444,12 @@ img {
   }
   .project-cover {
     height: auto;
+  }
+  .case-cover {
+    height: auto;
+  }
+  .case-cover img {
+    height: auto !important;
   }
   .project-caption h3 {
     font-size: 25px;

@@ -40,14 +40,16 @@ export const projects: Project[] = [
       "Launch content",
     ],
     challenge:
-      "Luma had an at-home brow lamination product formulated for African and Afro-diasporic brow textures, but no identity or strategic direction to communicate what made it different in a crowded market.",
+      "In a market filled with increasingly similar beauty brands, LUMA needed to stand apart. Its products are created specifically for African and Afro-diasporic brow textures, and the brand needed an identity that felt just as distinctive.",
     brief:
-      "Build a premium, distinctive identity, carry it across boxes, tubes, and bags, and create a content strategy for both the brand and founder Onyekachi Roha.",
+      "Create a bold, unique and premium identity for LUMA and carry it across the complete product range and packaging experience.",
     approach: [
-      "We created a butter-yellow and silver visual world, with a complete identity and product packaging system.",
-      "The brand strategy covered positioning, audience profiling, content pillars, and competitor analysis. A personal brand strategy for the founder and a 30-day Instagram calendar translated that direction into launch content.",
+      "We created LUMA's brand identity and translated it across the full product line, designing everything from the individual product tubes and outer boxes to the brand's bags and larger packaging pieces.",
+      "The result was a complete visual system that feels unmistakably LUMA rather than following the familiar beauty-brand aesthetics.",
     ],
-    galleryCount: 14,
+    outcome:
+      "A distinctive, elevated brow brand with an identity and packaging system designed to be instantly recognisable and impossible to confuse with the crowd.",
+    galleryCount: 13,
     pages: "6–8",
     website: "https://www.shopwithluma.com",
   },
@@ -55,22 +57,22 @@ export const projects: Project[] = [
     slug: "eve-effect",
     name: "Eve Effect",
     industry: "Haircare",
-    location: "Nigeria",
+    location: "Australia",
     headline: "Hair care that works.",
     summary:
       "Logo, branding, and product design for Eve Effect — Moisturising Hair Butter, Hydrating Hair Mist, and Rapunzel Hair Oil.",
     categories: ["Branding", "Strategy"],
     scope: ["Logo & brand identity", "Branding", "Product design"],
     challenge:
-      "Eve Effect needed a cohesive, premium identity to unite its haircare range and communicate efficacy on shelf and on social.",
+      "Based in Australia and created for textured-hair women, Eve Effect needed a distinctive, premium identity that could stand out in a competitive beauty market and feel at home alongside global haircare brands.",
     brief:
-      "Design a distinctive logo and carry it across labels, packaging, and product photography for the core trio.",
+      "Create a complete visual identity for Eve Effect and carry it consistently across the product range, content, and digital presence.",
     approach: [
-      "We built the Eve Effect wordmark with its looping E monogram and a deep-brown and cream label system.",
-      "The identity was applied to jars, spray bottles, and dropper bottles, with art direction for pack shots and e-commerce imagery.",
+      "We developed the brand identity and full product line, creating a cohesive visual language across packaging and product imagery.",
+      "We also shaped the social media strategy and content direction to define how Eve Effect communicates, tells its story, and connects with its audience.",
     ],
     outcome:
-      "A shelf-ready range with consistent branding across butter, mist, and oil.",
+      "A confident, premium brand presence built around one clear promise: Hair care that works.",
     galleryCount: 7,
     pages: "New",
   },
@@ -92,18 +94,18 @@ export const projects: Project[] = [
       "Creative direction",
     ],
     challenge:
-      "Second Skin had a compelling fragrance and a strong founding idea, but no defined positioning, content direction, or social foundation to communicate its value.",
+      "Second Skin had a compelling fragrance and a strong founding idea, but no visual identity, defined positioning, content direction, or social foundation to communicate its value.",
     brief:
-      "Build a complete identity and execute a product launch that positions Second Skin as a considered Nigerian fragrance house.",
+      "Design the logo, icon and visual identity and execute a product launch that positions Second Skin as a considered Nigerian fragrance house.",
     approach: [
-      "We developed the brand strategy, audience definition, and competitor analysis, then translated the positioning into sensory marketing, editorial lifestyle, founder storytelling, and product education.",
+      "We created the Second Skin wordmark and the icon, then developed the visual identity around them. We also developed the brand strategy, audience definition, and competitor analysis, then translated the positioning into sensory marketing, editorial lifestyle, founder storytelling, and product education.",
       "A refined communication system and four-week pre-launch content calendar supported the launch. The visual identity extended into packaging, tester materials, shopping bags, tissue paper, business cards, and digital assets.",
     ],
     outcome:
       "Second Skin entered the market with strategy, identity, content direction, and a physical brand experience working together from day one.",
     galleryCount: 5,
     pages: "22–23",
-    instagram: "https://www.instagram.com/seconddskinn",
+    instagram: "https://www.instagram.com/seconddskinn?stkn=MXZrN2RicmYyYzcxeQ==",
     videos: [
       {
         title: "After Hours — film 01",
@@ -139,61 +141,28 @@ export const projects: Project[] = [
       "Social media management",
     ],
     challenge:
-      "Zione Secrets had a product people connected with, but its social presence felt more like a store than a lifestyle brand. Static graphics did not fully express its emotional direction.",
+      "Zione Secrets had a strong product and an existing identity, but its social presence wasn't fully capturing the feeling of the brand or the lifestyle around it.",
     brief:
-      "Reframe lingerie around a woman's relationship with herself and build a visual world that feels soft, personal, and accessible.",
+      "Build on the existing identity and create a more expressive visual direction for the lingerie brand, with content that feels feminine, personal, and engaging.",
     approach: [
-      "We refined the brand icon and identity system, developing typography, colour direction, and assets that reflect the brand's feminine positioning.",
-      "Campaign planning, creative direction, and a shoot brought the new world to life. Social media management carried the identity consistently across the brand's content.",
+      "We created two logo variations from the existing wordmark, then developed the campaign concept and creative direction for Zione Secrets.",
+      "We shot the campaign and additional photo and video content showcasing the lingerie and sets, along with behind-the-scenes content. We also edited selected content for social media.",
     ],
     outcome:
-      "A more cohesive, lifestyle-led presence designed for connection and long-term growth.",
+      "A richer, more cohesive brand presence that extends beyond the product and creates a stronger connection with its audience.",
     galleryCount: 4,
     pages: "19–21",
-    instagram: "https://www.instagram.com/zionesecrets",
-  },
-  {
-    slug: "maek-glasses",
-    name: "Maek Glasses",
-    industry: "Eyewear",
-    location: "United Kingdom",
-    headline: "Renewal, seen through a different lens.",
-    summary:
-      "A lifestyle and fashion campaign that places eyewear naturally inside moments of renewal, ease, and a great beach day.",
-    categories: ["Campaigns"],
-    scope: [
-      "Creative direction",
-      "Campaign planning",
-      "Content ideation & scripting",
-      "Video & lifestyle imagery",
-    ],
-    challenge:
-      "The brand needed campaign content that felt natural and elevated, blending lifestyle with fashion without forcing the product into the story.",
-    brief:
-      "Capture rebirth and renewal for a New Year recharge campaign through clean, summery visuals and intentional product placement.",
-    approach: [
-      "We handled creative direction, campaign planning, and the shoot. Three edited video posts, raw footage, and supporting lifestyle images formed the delivery.",
-      "The concepts included a beach-day outfit moment, a campaign ad, and a playful film built around girlhood and an easy day by the sea.",
-    ],
-    galleryCount: 0,
-    pages: "9–10",
-    textCover: true,
-    instagram: "https://www.instagram.com/maekeyewear",
+    instagram: "https://www.instagram.com/zionesecrets?stkn=MXVjMDYxOWpjYWVlYQ==",
     videos: [
       {
-        title: "Beach day — film 01",
-        href: "/work/maek-glasses/videos/01.mp4",
-        poster: "/work/maek-glasses/videos/01-poster.webp",
+        title: "Zione Secrets — film 01",
+        href: "/work/zione-secrets/videos/01.mp4",
+        poster: "/work/zione-secrets/videos/01-poster.webp",
       },
       {
-        title: "Campaign — film 02",
-        href: "/work/maek-glasses/videos/02.mp4",
-        poster: "/work/maek-glasses/videos/02-poster.webp",
-      },
-      {
-        title: "Renewal — film 03",
-        href: "/work/maek-glasses/videos/03.mp4",
-        poster: "/work/maek-glasses/videos/03-poster.webp",
+        title: "Zione Secrets — film 02",
+        href: "/work/zione-secrets/videos/02.mp4",
+        poster: "/work/zione-secrets/videos/02-poster.webp",
       },
     ],
   },
@@ -224,9 +193,8 @@ export const projects: Project[] = [
       "Launch and lifestyle content reaching six-figure views, including Reels over 100K views.",
     galleryCount: 1,
     pages: "New",
-    textCover: true,
     website: "https://www.allayhouse.com",
-    instagram: "https://www.instagram.com/theallayhouse",
+    instagram: "https://www.instagram.com/theallayhouse?stkn=MTUwZmhoczU0NmpsZQ==",
     videos: [
       {
         title: "The space — film 01",
@@ -246,61 +214,49 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "big-and-tall",
-    name: "Big and Tall",
-    industry: "Fashion",
-    location: "Lagos, Nigeria",
-    headline: "Own your size. Own your style.",
+    slug: "maek-glasses",
+    name: "Maek Glasses",
+    industry: "Eyewear",
+    location: "United Kingdom",
+    headline: "Renewal, seen through a different lens.",
     summary:
-      "A premium, inclusive identity and launch system for a unisex fashion brand serving plus-sized people across Nigeria.",
-    categories: ["Branding", "Strategy"],
+      "A lifestyle and fashion campaign that places eyewear naturally inside moments of renewal, ease, and a great beach day.",
+    categories: ["Campaigns"],
     scope: [
-      "Logo & identity",
-      "Brand guidelines",
-      "Product mockups",
-      "Brand printables",
-      "Launch content strategy",
+      "Creative direction",
+      "Campaign planning",
+      "Content ideation & scripting",
+      "Video & lifestyle imagery",
     ],
     challenge:
-      "The founder had a clear vision for modern plus-size fashion but no logo, visual system, or content direction to bring it to market.",
+      "The brand needed campaign content that felt natural and elevated, blending lifestyle with fashion without forcing the product into the story.",
     brief:
-      "Create an identity that feels premium and inclusive, with product applications, printables, and a social content plan ready for launch.",
+      "Capture rebirth and renewal for a New Year recharge campaign through clean, summery visuals and intentional product placement.",
     approach: [
-      "We developed a BT monogram and wordmark, a navy-cream-steel palette, and a three-font typography system, supported by brand guidelines.",
-      "The identity was applied to clothing mockups, packaging bags, hang tags, garment labels, and business cards. Instagram grid architecture and a 10-step launch content plan connected the system to the rollout.",
+      "We handled creative direction, campaign planning, and the shoot. Three edited video posts, raw footage, and supporting lifestyle images formed the delivery.",
+      "The concepts included a beach-day outfit moment, a campaign ad, and a playful film built around girlhood and an easy day by the sea.",
     ],
-    outcome:
-      "Big and Tall launched with a cohesive identity across digital and physical touchpoints, from its social grid to garment details.",
-    galleryCount: 4,
-    pages: "13–14",
-  },
-  {
-    slug: "breathe-live-explore",
-    name: "Breathe Live Explore",
-    industry: "Home & lifestyle",
-    location: "Canada",
-    headline: "Bold patterns. A clearer presence.",
-    summary:
-      "A social strategy and ongoing content system for artist-designed bedding and intentional, colourful living.",
-    categories: ["Social", "Strategy"],
-    scope: [
-      "Social media audit",
-      "Content strategy",
-      "Visual direction",
-      "Instagram & TikTok management",
+    galleryCount: 0,
+    pages: "9–10",
+    textCover: true,
+    instagram: "https://www.instagram.com/maekeyewear?stkn=MWxwZ3c4dHhpMXJyOA==",
+    videos: [
+      {
+        title: "Beach day — film 01",
+        href: "/work/maek-glasses/videos/01.mp4",
+        poster: "/work/maek-glasses/videos/01-poster.webp",
+      },
+      {
+        title: "Campaign — film 02",
+        href: "/work/maek-glasses/videos/02.mp4",
+        poster: "/work/maek-glasses/videos/02-poster.webp",
+      },
+      {
+        title: "Renewal — film 03",
+        href: "/work/maek-glasses/videos/03.mp4",
+        poster: "/work/maek-glasses/videos/03-poster.webp",
+      },
     ],
-    challenge:
-      "BLE had distinctive visuals, but its social page lacked a clear bio, content rhythm, consistent calls to action, and a framework for what to post.",
-    brief:
-      "Audit the existing presence, create a clear content strategy, and manage its execution while maintaining the brand's intentional tone.",
-    approach: [
-      "We audited the bio, grid, content performance, and opportunities, then built four pillars: Product Focus, Lifestyle & Everyday Living, Mood & Aesthetic Storytelling, and Founder/Brand Story.",
-      "A visual direction, hashtag framework, and content library supported ongoing management, including four to five Reels per month.",
-    ],
-    outcome:
-      "The detailed case study reports growth from 509 to 610 followers in the first month: 101 new followers through organic Reels, without paid promotion.",
-    galleryCount: 3,
-    pages: "11–12",
   },
   {
     slug: "goal-up",

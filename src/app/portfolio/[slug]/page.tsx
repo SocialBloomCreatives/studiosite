@@ -30,6 +30,11 @@ export default async function ProjectPage({
   if (index < 0) notFound();
   const project = projects[index],
     next = projects[(index + 1) % projects.length];
+  const coverSrc =
+    project.textCover && project.videos?.[0]?.poster
+      ? project.videos[0].poster
+      : `/work/${project.slug}/cover.webp`;
+  const coverDims = sizes[coverSrc] ?? { width: 1400, height: 900 };
   return (
     <article>
       <PageHero
@@ -64,29 +69,15 @@ export default async function ProjectPage({
           </div>
         </div>
         <div className="case-cover">
-          {project.textCover && project.videos?.[0]?.poster ? (
-            <Image
-              src={project.videos[0].poster}
-              alt={`${project.name} campaign film still`}
-              width={
-                sizes[project.videos[0].poster]?.width ?? 720
-              }
-              height={
-                sizes[project.videos[0].poster]?.height ?? 1280
-              }
-              style={{ width: "100%", height: "auto" }}
-              sizes="100vw"
-              priority
-            />
-          ) : (
-            <Image
-              src={`/work/${project.slug}/cover.webp`}
-              alt={`${project.name} project artwork from the SBC Agency Portfolio`}
-              fill
-              sizes="100vw"
-              priority
-            />
-          )}
+          <Image
+            src={coverSrc}
+            alt={`${project.name} project artwork from the SBC Agency Portfolio`}
+            width={coverDims.width}
+            height={coverDims.height}
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            sizes="100vw"
+            priority
+          />
         </div>
       </div>
       <section className="section">

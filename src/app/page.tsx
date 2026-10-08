@@ -43,8 +43,8 @@ export default function Home() {
         <div className="hero-media">
           <div className="hero-photo">
             <Image
-              src="/brand/studio.webp"
-              alt="SBC's creative director holding a phone displaying the SBC identity"
+              src="/brand/hero-cover.jpg"
+              alt="SBC studio cover"
               fill
               sizes="(max-width: 600px) 100vw, 55vw"
               priority
@@ -149,7 +149,6 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">Luma — Beauty</p>
             </div>
             <div className="logo-cell">
               <Image
@@ -159,7 +158,6 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">Eve Effect — Haircare</p>
             </div>
             <div className="logo-cell">
               <Image
@@ -169,7 +167,6 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">Second Skin — Fragrance</p>
             </div>
             <div className="logo-cell">
               <Image
@@ -179,7 +176,6 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">Zione Secrets — Lingerie</p>
             </div>
             <div className="logo-cell">
               <Image
@@ -189,7 +185,6 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">Dear Amorea — Brand identity</p>
             </div>
             <div className="logo-cell">
               <Image
@@ -199,15 +194,15 @@ export default function Home() {
                 height={110}
                 style={{ width: "auto", height: "auto" }}
               />
-              <p className="eyebrow">OknotSorry — Brand identity</p>
             </div>
             <div className="logo-cell">
-              <p className="logo-wordmark">Maek Glasses</p>
-              <p className="eyebrow">Maek Glasses — Eyewear</p>
-            </div>
-            <div className="logo-cell">
-              <p className="logo-wordmark">Allay House</p>
-              <p className="eyebrow">Allay House — Beauty & wellness</p>
+              <Image
+                src="/brand/logos/off-the-street.svg"
+                alt="Off the Street logo"
+                width={220}
+                height={110}
+                style={{ width: "auto", height: "auto" }}
+              />
             </div>
           </div>
         </div>
@@ -229,7 +224,7 @@ export default function Home() {
             </Link>
           </SectionHeading>
           <div className="project-grid">
-            {projects.slice(0, 4).map((p, i) => (
+            {projects.slice(0, 5).map((p, i) => (
               <ProjectCard key={p.slug} project={p} priority={i === 0} />
             ))}
           </div>
@@ -253,7 +248,7 @@ export default function Home() {
           </SectionHeading>
           <div className="logo-grid">
             <div className="logo-cell">
-              <p className="logo-wordmark">Allay House</p>
+              <p className="logo-wordmark font-montserrat">Allay House</p>
               <p className="eyebrow">Beauty & wellness — Lagos</p>
               <a
                 className="text-link mt-4"
@@ -265,7 +260,7 @@ export default function Home() {
               </a>
             </div>
             <div className="logo-cell">
-              <p className="logo-wordmark">LUMA.</p>
+              <p className="logo-wordmark font-montserrat">LUMA.</p>
               <p className="eyebrow">Beauty — Lagos & diaspora</p>
               <a
                 className="text-link mt-4"
