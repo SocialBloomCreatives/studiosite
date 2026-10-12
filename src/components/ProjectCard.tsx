@@ -15,6 +15,8 @@ export function ProjectCard({
 }) {
   const href = externalHref ?? `/portfolio/${project.slug}`;
   const external = Boolean(externalHref);
+  const coverSrc = project.cover ?? `/work/${project.slug}/cover.webp`;
+  const coverDims = sizes[coverSrc] ?? { width: 1200, height: 900 };
   return (
     <Link
       href={href}
@@ -28,10 +30,10 @@ export function ProjectCard({
       ) : (
         <div className="project-cover">
           <Image
-            src={`/work/${project.slug}/cover.webp`}
+            src={coverSrc}
             alt={`${project.name} — ${project.industry} project by SBC`}
-            width={sizes[`/work/${project.slug}/cover.webp`]?.width ?? 1200}
-            height={sizes[`/work/${project.slug}/cover.webp`]?.height ?? 900}
+            width={coverDims.width}
+            height={coverDims.height}
             style={{ width: "100%", height: "auto" }}
             sizes="(max-width: 600px) 100vw, 50vw"
             priority={priority}

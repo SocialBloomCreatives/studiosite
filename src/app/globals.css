@@ -364,7 +364,7 @@ img {
   min-height: 590px;
 }
 .hero-photo img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 .hero-statement {
@@ -550,6 +550,9 @@ img {
 .font-montserrat {
   font-family: var(--font-montserrat), Arial, sans-serif;
   font-weight: 600;
+}
+.logos-band {
+  background: var(--pink);
 }
 .logo-ticker {
   background: transparent;
@@ -772,6 +775,9 @@ img {
 .portrait img {
   object-fit: cover;
 }
+.about-band .portrait {
+  height: 620px;
+}
 .beliefs {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -839,6 +845,7 @@ img {
   height: auto;
   margin-top: 50px;
   background: var(--parchment);
+  overflow: hidden;
 }
 .case-cover img {
   object-fit: cover;
@@ -1317,7 +1324,7 @@ img {
     padding: 40px;
   }
   .project-cover {
-    height: 390px;
+    height: auto;
   }
   .split,
   .college-grid {
@@ -1330,7 +1337,7 @@ img {
     padding: 14px 18px;
   }
   .case-cover {
-    height: 600px;
+    height: auto;
   }
 }
 @media (max-width: 900px) {
@@ -1371,7 +1378,7 @@ img {
     display: none;
   }
   .project-cover {
-    height: 310px;
+    height: auto;
   }
   .college-grid,
   .split {
@@ -1392,7 +1399,7 @@ img {
     gap: 40px;
   }
   .case-cover {
-    height: 500px;
+    height: auto;
   }
   .highlight-grid {
     grid-template-columns: 1fr;
@@ -1463,7 +1470,7 @@ img {
     grid-template-columns: 1fr;
   }
   .hero-photo {
-    min-height: 410px;
+    min-height: 500px;
   }
   .hero-statement {
     min-height: 350px;
@@ -1549,8 +1556,11 @@ img {
   .portrait {
     height: 500px;
   }
+  .about-band .portrait {
+    height: 440px;
+  }
   .case-cover {
-    height: 460px;
+    height: auto;
     margin-top: 30px;
   }
   .case-meta {

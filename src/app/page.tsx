@@ -114,7 +114,7 @@ export default function Home() {
         <div className="wrap split">
           <div className="portrait">
             <Image
-              src="/brand/about-home-v2.webp"
+              src="/brand/about-home-v3.webp"
               alt="SBC creative director"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"
@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section divider">
+      <section className="section divider logos-band">
         <div className="wrap">
           <SectionHeading
             eyebrow="Logos we've made"

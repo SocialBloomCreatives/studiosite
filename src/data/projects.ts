@@ -18,6 +18,7 @@ export type Project = {
   website?: string;
   instagram?: string;
   textCover?: boolean;
+  cover?: string;
 };
 // Mapped to the June 2026 SBC Agency Portfolio. Synn is the spelling in the
 // project's own identity; the index inconsistently says Skynn. BLE's detailed
@@ -193,6 +194,7 @@ export const projects: Project[] = [
       "Launch and lifestyle content reaching six-figure views, including Reels over 100K views.",
     galleryCount: 1,
     pages: "New",
+    cover: "/work/allay-house/cover-v2.webp",
     website: "https://www.allayhouse.com",
     instagram: "https://www.instagram.com/theallayhouse?stkn=MTUwZmhoczU0NmpsZQ==",
     videos: [

@@ -33,7 +33,7 @@ export default async function ProjectPage({
   const coverSrc =
     project.textCover && project.videos?.[0]?.poster
       ? project.videos[0].poster
-      : `/work/${project.slug}/cover.webp`;
+      : (project.cover ?? `/work/${project.slug}/cover.webp`);
   const coverDims = sizes[coverSrc] ?? { width: 1400, height: 900 };
   return (
     <article>
