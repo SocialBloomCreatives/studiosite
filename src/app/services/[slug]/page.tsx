@@ -129,7 +129,7 @@ export default async function ServicePage({
               </div>
               <div className="site-card">
                 <div>
-                  <h3>LUMA.</h3>
+                  <h3>Luma</h3>
                   <p className="site-meta">
                     Beauty
                     <br />

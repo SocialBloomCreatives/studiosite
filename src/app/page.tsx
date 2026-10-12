@@ -233,12 +233,7 @@ export default function Home() {
           </SectionHeading>
           <div className="project-grid">
             {projects.slice(0, 5).map((p, i) => (
-              <ProjectCard
-                key={p.slug}
-                project={p}
-                priority={i === 0}
-                externalHref={p.instagram}
-              />
+              <ProjectCard key={p.slug} project={p} priority={i === 0} />
             ))}
           </div>
         </div>
@@ -274,7 +269,7 @@ export default function Home() {
             </div>
             <div className="site-card">
               <div>
-                <h3>LUMA.</h3>
+                <h3>Luma</h3>
                 <p className="site-meta">
                   Beauty
                   <br />
